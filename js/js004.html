@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="alert" class="alert-box">알림창
+        <button onclick="alertControl('none')">닫기</button>
+    </div>
+
+    <button onclick="alertControl('block', 'crimson')">알림창1 보기</button>
+    <button onclick="alertControl('block', 'aqua')">알림창2 보기</button>
+
+    <script>
+        function alertControl(param1, param2) {
+            document.getElementById('alert').style.display = param1;
+            document.getElementById('alert').style.backgroundColor = param2;
+        }
+    </script>
+</body>
+</html>

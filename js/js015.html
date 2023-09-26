@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="https://via.placeholder.com/600" class="w-100">
+                <h5>Card title</h5>
+                <p>가격 : 70000</p>
+            </div>
+        </div>
+
+        <div class="container" id="more">
+            <button class="btn btn-danger" id="add">상품 더보기</button>
+            <button class="btn btn-danger" id="price">가격순 정렬</button>
+            <button class="btn btn-danger" id="char">가나다순 정렬</button>
+            <button class="btn btn-danger" id="filter">6만원이하 상품만 보기</button>
+        </div>
+    </div>
+
+    <script>
+        
+        var products = [
+            { id : 0, price : 70000, title : 'Blossom Dress' },
+            { id : 1, price : 50000, title : 'Springfield Shirt' },
+            { id : 2, price : 60000, title : 'Black Monastery' }
+        ];
+
+        $('.row div').remove("div");
+
+        // for(let i = 0; i < products.length; i++) {
+        //     $('.row').eq(data.id).append(
+        //         `<div class="col-sm-4">
+        //             <img src="https://via.placeholder.com/600" class="w-100">
+        //             <h5>${data.title}</h5>
+        //             <p>${data.price}</p>
+        //             </div>`);
+        // }
+        products.forEach(function (data,index){
+            $('.row').append(
+            `<div class="col-sm-4">
+                <img src="https://via.placeholder.com/600" class="w-100">
+                <h5>${data.title}</h5>
+                <p>가격 : ${data.price}</p>
+            </div>`)
+        });
+
+
+        $('#filter').click(function() {
+            var products2 = products.filter(function(a) {
+                return a.price <= 60000;
+            })
+            console.log(products2);
+
+            $('.row').html('');
+            products2.forEach(function (data,index){
+                $('.row').append(
+                `<div class="col-sm-4">
+                    <img src="https://via.placeholder.com/600" class="w-100">
+                    <h5>${data.title}</h5>
+                    <p>가격 : ${data.price}</p>
+                </div>`)
+            });
+        });
+
+        $('#char').click(function() {
+            products.sort(function(a,b) {
+                if(a.title>b.title) {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            })
+            console.log(products);
+
+            $('.row').html('');
+            products.forEach(function (data,index){
+                $('.row').append(
+                `<div class="col-sm-4">
+                    <img src="https://via.placeholder.com/600" class="w-100">
+                    <h5>${data.title}</h5>
+                    <p>가격 : ${data.price}</p>
+                </div>`)
+            });
+        })
+        
+
+        $('#price').click(function (){
+            products.sort(function (a,b){
+                return a.price - b.price
+            })
+            console.log(products);
+            //여기까지만 하면 화면은 안바뀌고 products 배열의 자료순서만 바뀜
+        
+
+            $('.row').html('');
+            products.forEach(function (data,index){
+                $('.row').append(
+                `<div class="col-sm-4">
+                    <img src="https://via.placeholder.com/600" class="w-100">
+                    <h5>${data.title}</h5>
+                    <p>가격 : ${data.price}</p>
+                </div>`)
+            });
+        });
+
+        
+
+        $.get('https://gist.githubusercontent.com/leeanJP/3ee931feb393f95895bd652344d1bf13/raw/d255a58907156433ef61de8401bf16564df4407f/more1.json')
+        .done(function (data){
+            console.log(data);  //요청이 완료되면 동작할 코드
+            var addProducts = JSON.parse(data);
+            var bool = false;
+
+                $('#add').on('click', function() {
+                    if(bool == false) {
+                        bool = true;
+                        addProducts.forEach((data, i) => {
+                        $('#more').append(
+                            `<div class="col-sm-4">
+                                <img src="https://via.placeholder.com/600" class="w-100">
+                                <h5>${data.title}</h5>
+                                <p>${data.price}</p>
+                            </div>`);
+                        });
+                    } else if (bool == true) {
+                        bool = false;
+                        $('#more div').remove('div');
+                    }
+                });
+            
+        }).fail(function (error){
+            console.log(error); //요청이 실패했을 때  동작할 코드 
+        }).always(function (){
+            console.log("test"); //성공 실패에 관계없이 항상 동작할 코드 
+        })
+
+    </script>
+
+</body>
+</html>

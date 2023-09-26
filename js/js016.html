@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="quiz">
+        <h4>물에 빠지면 누구먼저 구할 것인가?</h4>
+        <button>친구</button>
+        <button>부모님</button>
+        <button>반려동물</button>
+    </div>
+
+    <script>
+        $('#quiz').on('click', function(e) {
+            switch(e.target.innerHTML) {
+                case '친구':
+                    alert('의리 있네요');
+                    break;
+                case '부모님':
+                    alert('효자네요');
+                    break;
+                case '반려동물':
+                    alert('동물애호가네요');
+                    break;
+            }
+        })
+
+        let 변수 = 2 + 2;
+
+        switch(변수) {
+        case 3 :
+            alert("변수 3임");
+            break
+        case 4 :
+            alert("변수 4임");
+            break
+        default :
+            alert("아무것도 해당안됨");
+            break
+        }
+
+        function getFee(isMember) {
+            return isMember ? '$2.00' : '$10.00';
+        }
+
+        console.log(getFee(true)); // $2.00
+        console.log(getFee(false)); // $10.00
+        console.log(getFee(null)); // $10.00
+
+        
+    </script>
+
+</body>
+</html>

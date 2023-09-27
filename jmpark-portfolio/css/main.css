@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+div {
+    display: block;
+}
+
+a:link {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+
+.test {
+    height: 100px;
+    width: 100px;
+}
+
+.layout {
+    animation: fadein 1.4s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    display: grid;
+    grid-auto-columns: repeat(1, 1fr);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-class {
+    position: fixed;
+    width: 95vw;
+}
+
+.bar_menu_container {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.bar_open {
+    padding: 20px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar_close {
+    padding: 20px 20px 20px 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.bar_close .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bar_close .bar2 {
+    opacity: 0;
+}
+
+.bar_close .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header-class ul {
+    list-style: none;
+    margin: 0;
+}
+
+.bar_menu {
+    display: grid;
+    color: grey;
+    font-size: 17px;
+    list-style: none;
+    padding: 0;
+    grid-gap: 21px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.typer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+}
+
+.typer-text {
+    /* font-family: Noto Sans KR, sans-serif; */
+    border-right: 0.1em solid #fff;
+    font-size: 4vw;
+    white-space: pre;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding-top: 0.2em;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.about_me {
+    margin: 0;
+    background: #ffc107;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hedding {
+    font-family: 'Dela Gothic One', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.hedding:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #7b7cd4;
+}
+
+.about_me_content {
+    font-family: Noto Sans KR, sans-serif;
+    margin-bottom: 4rem;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-right: 8vw;
+    width: 100%;
+}
+
+.Skill {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+    background: #e7e6e6;
+}
+
+.Skill_Heeding {
+    font-family: 'Dela Gothic One', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.Skill_Heeding:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 2px;
+    width: 30px;
+    left: 0;
+    right: 70%;
+    margin: 0 auto;
+    background: #fdc6c6;
+}
+
+.Project {
+    background: #055160;
+    border-top: 2px solid #055160;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+.Project_title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3em;
+}
+
+.Project_hedding {
+    font-family: 'Dela Gothic One', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.Project_hedding:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 2px;
+    width: 50px;
+    left: 50%;
+    right: 0;
+    margin: 0 auto;
+    background: #f88c65;
+}
+
+.Contact {
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact_hedding {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.hide {
+    display: none;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    max-width: 14rem;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.icon {
+    /* text-align: left; */
+    width: 35px;
+    height: 35px;
+    margin-right: 50px;
+}
+
+.info_text {
+    text-align: left;
+    line-height: 10px;
+}
+
+.front-end {
+    width: 200px;
+    height: 160px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    flex-shrink: 0;
+    width: 17rem;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+}
+
+.Github {
+    width: 100px;
+    height: 100px;
+}

@@ -9,40 +9,40 @@ public class Question {
 		Scanner sc = new Scanner(System.in);
 		
 		// 1.
-//		int a1 = sc.nextInt();
-//		int b1 = sc.nextInt();
-//		System.out.println(a1 + "+" + b1 + "=" + (a+b));
-//		
-//		// 2.
-//		System.out.print("몇 층인지 입력하세요>>");
-//		int floor = sc.nextInt();
-//		System.out.println(floor*5 + "m 입니다.");
-//		
-//		// 3.
-//		System.out.print("x 값을 입력하세요>>");
-//		int x = sc.nextInt();
-//		System.out.println("x=" + x + ", y=" + (int)(Math.pow(x, 2) - (3 * x) + 7));
+		int a1 = sc.nextInt();
+		int b1 = sc.nextInt();
+		System.out.println(a1 + "+" + b1 + "=" + (a+b));
+		
+		// 2.
+		System.out.print("몇 층인지 입력하세요>>");
+		int floor = sc.nextInt();
+		System.out.println(floor*5 + "m 입니다.");
+		
+		// 3.
+		System.out.print("x 값을 입력하세요>>");
+		int x = sc.nextInt();
+		System.out.println("x=" + x + ", y=" + (int)(Math.pow(x, 2) - (3 * x) + 7));
 		
 		// 5.
-//		System.out.print("논리연산을 입력하세요>>");
-//		boolean a5 = sc.nextBoolean();
-//		String op = sc.next();
-//		boolean b5 = sc.nextBoolean();
-//		
-//		switch(op) {
-//		case "AND":
-//			if(a5 == b5) {
-//				System.out.println("ture");
-//			} else {
-//				System.out.println("false");
-//			}
-//		case "OR":
-//			if(a5 == false && b5 == false) {
-//				System.out.println("false");
-//			} else {
-//				System.out.println("true");
-//			}
-//		}
+		System.out.print("논리연산을 입력하세요>>");
+		boolean a5 = sc.nextBoolean();
+		String op = sc.next();
+		boolean b5 = sc.nextBoolean();
+		
+		switch(op) {
+		case "AND":
+			if(a5 == b5) {
+				System.out.println("ture");
+			} else {
+				System.out.println("false");
+			}
+		case "OR":
+			if(a5 == false && b5 == false) {
+				System.out.println("false");
+			} else {
+				System.out.println("true");
+			}
+		}
 		
 		// 6.
 		System.out.print("돈의 액수를 입력하세요>>");
@@ -124,6 +124,68 @@ public class Question {
 //			won -= 1;
 //		}
 //		System.out.print("1원" + change + "개");
+		
+		
+		// 7.
+		System.out.print("학점을 입력하세요>>");
+		switch(sc.next()) {
+		case "A":
+		case "B":
+			System.out.println("Excellent");
+			break;
+		case "C":
+		case "D":
+			System.out.println("Good");
+			break;
+		case "F":
+			System.out.println("Bye");
+			break;
+		}
+		
+		
+		// 8.
+		// if
+//		System.out.print("커피 주문하세요>>");
+//		String coffee = sc.next();
+//		int val = sc.nextInt();
+//		int price = 0;
+//		
+//		if(coffee.equals("에스프레소")) {
+//			price = 2000;
+//		}
+//		else if(coffee.equals("아메리카노")) {
+//			price = 2500;
+//		}
+//		else if(coffee.equals("카푸치노")) {
+//			price = 3000;
+//		}
+//		else if(coffee.equals("카페라떼")) {
+//			price = 3500;	
+//		}
+//		System.out.println(price*val + "원입니다.");
+		
+		
+		//switch
+		System.out.print("커피 주문하세요>>");
+		String coffee = sc.next();
+		int val = sc.nextInt();
+		int price = 0;
+		
+		switch(coffee) {
+		case "에스프레소":
+			price = 2000;
+			break;
+		case "아메리카노":
+			price = 2500;
+			break;
+		case "카푸치노":
+			price = 3000;
+			break;
+		case "카페라떼":
+			price = 3500;
+			break;
+		}
+		System.out.println(price*val + "원입니다.");
 		
 	}
 

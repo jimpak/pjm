@@ -11,7 +11,7 @@ public class Question {
 		// 1.
 		int a1 = sc.nextInt();
 		int b1 = sc.nextInt();
-		System.out.println(a1 + "+" + b1 + "=" + (a+b));
+		System.out.println(a1 + "+" + b1 + "=" + (a1+b1));
 		
 		// 2.
 		System.out.print("몇 층인지 입력하세요>>");

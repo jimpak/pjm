@@ -1,8 +1,8 @@
-package chapter4;
+package practice1;
 
 import java.util.Scanner;
 
-public class Question {
+public class 박정민 {
 
 	public static void main(String[] args) {
 		
@@ -11,7 +11,7 @@ public class Question {
 		// 1.
 		int a1 = sc.nextInt();
 		int b1 = sc.nextInt();
-		System.out.println(a1 + "+" + b1 + "=" + (a+b));
+		System.out.println(a1 + "+" + b1 + "=" + (a1+b1));
 		
 		// 2.
 		System.out.print("몇 층인지 입력하세요>>");
@@ -36,12 +36,14 @@ public class Question {
 			} else {
 				System.out.println("false");
 			}
+			break;
 		case "OR":
 			if(a5 == false && b5 == false) {
 				System.out.println("false");
 			} else {
 				System.out.println("true");
 			}
+			break;
 		}
 		
 		// 6.

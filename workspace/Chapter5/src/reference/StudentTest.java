@@ -9,8 +9,11 @@ public class StudentTest {
 		ahn.studentName = "Ahn";
 		ahn.korean.scorePoint = 80;
 		ahn.korean.subjectName = "국어";
-		ahn.math.scorePoint = 90;
-		ahn.math.subjectName = "수학";
+		
+//		ahn.math = new Subject();
+//		ahn.math.scorePoint = 90;
+//		ahn.math.subjectName = "수학";
+		ahn.math = new Subject("수학", 90);
 		
 		System.out.println(ahn.studentID);
 		System.out.println(ahn.studentName);

@@ -13,10 +13,16 @@ public class TakeTrans {
 	Q7. Q6에서 구현한 내용에 카드 회사 클래스 CardCompany를 싱글톤 피턴을 사용하여 구현해 보세요.
 	*/
 	public static void main(String[] args) {
-		Person kim = new Person("김씨", 5000);
-		Person lee = new Person("이씨", 10000);
+		Customer kim = new Customer("김씨", 10000);
+		Customer lee = new Customer("이씨", 10000);
 		
-		Store store1 = new Store("별다방", "아메리카노");
-		kim.take()
+		StarCafe star = new StarCafe("별다방");
+		kim.buyStarCafe(star, 4000);
+		
+		KongCafe kong = new KongCafe("콩다방");
+		lee.buyKongCafe(kong, 4500);
+		
+		kim.showInfo();
+		lee.showInfo();
 	}
 }

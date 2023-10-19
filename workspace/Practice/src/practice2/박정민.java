@@ -11,9 +11,9 @@ public class 박정민 {
 		String s = sc.next(); // 문자열로 읽음
 		char c = s.charAt(0); // 문자열의 첫 번째 문자
 		
-		for(int i = 97; i < (int)s; i++) {
+//		for(int i = 97; i < (int)s; i++) {
 			
-		}
+//		}
 		
 	}
 }

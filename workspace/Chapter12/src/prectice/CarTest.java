@@ -1,5 +1,7 @@
 package prectice;
 
+import java.util.HashMap;
+
 class Car {
 	String name;
 	public Car() {}
@@ -8,6 +10,27 @@ class Car {
 	}
 }
 
+class CarFactory {
+	// 싱글톤
+	private static CarFactory instance = new CarFactory();
+	private CarFactory() {}
+	public static CarFactory getInstance() {
+		return instance;
+	}
+	//해쉬맵
+	private HashMap<String, Car> map = new HashMap();
+	
+	public Car createCar(String name) {
+		// 중복확인
+		if(map.containsKey(name) ) {
+			return map.get(name);
+		}
+		
+		Car car = new Car(name);
+		map.put(name, car);
+		return car;
+	}
+}
 
 public class CarTest {
 

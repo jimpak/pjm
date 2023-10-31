@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 작성폼</title>
+    <link rel="stylesheet" href="/css/sb-admin-2.css">
+    <script src="/js/sb-admin-2.js"></script>
+</head>
+
+<style>
+
+    .layout {
+        width: 1000px;
+        margin: 40px auto 0px;
+    }
+
+    .layout input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    .layout textarea {
+        width : 100%;
+        margin-top: 10px;
+        min-height: 300px;
+    }
+
+</style>
+
+<body>
+    <div class="layout">
+        <form action="/board/writepro" method="post" enctype="multipart/form-data">
+            <input class="form-control form-control-user" name="title" type="text" placeholder="제목을 입력하세요">
+            <textarea class="form-control form-control-user" name="content" placeholder="내용을 입력하세요"></textarea>
+            <input type="file" name="file">
+            <button type="submit">작성</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 상세 페이지</title>
+    <link rel="stylesheet" href="/css/sb-admin-2.css">
+    <script src="/js/sb-admin-2.js"></script>
+</head>
+
+<style>
+
+    .layout {
+        width: 1500px;
+        margin: 40px auto 0px;
+    }
+
+    .layout input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    .layout textarea {
+        width : 100%;
+        margin-top: 10px;
+        min-height: 300px;
+    }
+
+</style>
+
+<body>
+<div class="layout">
+    <div class="container">
+        <h1 class="h3 mb-4 text-gray-800">게시판 작성</h1>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary" th:text="${board.title}">제목입니다.</h6>
+                </div>
+                <div class="card-body">
+                    <p th:text="${board.content}">내용이 들어갈 부분입니다.</p>
+                    <a th:href="@{${board.filefath}}"></a>
+                </div>
+            </div>
+        <a th:href="@{/board/modify/{id}(id = ${board.id})}" class="btn btn-primary btn-icon-split">
+            <span class="text">수정</span>
+        </a>
+        <a th:href="@{/board/delete(id=${board.id})}" class="btn btn-danger btn-icon-split">
+            <span class="text">삭제</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

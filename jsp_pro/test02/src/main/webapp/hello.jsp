@@ -12,7 +12,7 @@
 %>
 <h1> 파일 <%=s1%></h1>
 <%
-out.println(s2);
+out.println(s2 + "<br>");
 %>
 <%
 String id = request.getParameter("id");

@@ -12,7 +12,7 @@
 %>
 <h1> 파일 <%=s1%></h1>
 <%
-out.println(s2 + "<br>");
+out.println(s2 + "</br>");
 %>
 <%
 String id = request.getParameter("id");
@@ -22,7 +22,7 @@ Enumeration headers = request.getHeaderNames();
 while (headers.hasMoreElements()) {
     String headerName = (String)headers.nextElement();
     String headerValue = request.getHeader(headerName);
-    out.println(headerName + ":" + headerValue + "<br>");
+    out.println(headerName + ":" + headerValue + "</br>");
 }
 %>
 <h1>아이디 : <%=id%></h1>

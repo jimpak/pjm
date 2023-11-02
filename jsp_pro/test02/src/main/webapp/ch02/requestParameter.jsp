@@ -15,7 +15,7 @@
             favo_str += favo[i] + " ";
         }
     }
-    String intro = request.getParameter("intro").replace("\r\n", "<br>");
+    String intro = request.getParameter("intro").replace("\r\n", "</br>");
 %>
 
 <ul>

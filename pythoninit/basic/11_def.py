@@ -13,4 +13,12 @@ def lines(str):
 lines() # 파이썬에서는 overloading이 없기 때문에 최종 함수로 적용
 lines("def")
 
-# 3) 함수 정의(매개변수 없고, 리턴타입 있음)
+#3) 함수 정의(매개변수가 없고, 리턴타입 있음)
+def lines():
+  return f"{'':=^30}"
+print(lines())
+
+#4) 함수 정의(매개변수가 있고, 리턴타입 있음)
+def lines(str):
+  return f"{" "+str+" ":=^30}"
+print(lines("python"))

@@ -1,11 +1,7 @@
 <%@ page import="common.JDBConnect" %>
-<%@ page import="common.OracleJDBConnect" %><%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 2023-11-06
-  Time: 오후 4:49
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="common.OracleJDBConnect" %>
+<%@ page import="common.MySQLConnectPool" %>
+<%@ page import="common.OracleConnectPool" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -39,6 +35,18 @@
 <%
     OracleJDBConnect oraJdbc1 = new OracleJDBConnect();
     oraJdbc1.close();
+%>
+
+<h2>MySQL ConnectPool 테스트</h2>
+<%
+    MySQLConnectPool mPool = new MySQLConnectPool();
+    mPool.close();
+%>
+
+<h2>Oracle ConnectPool 테스트</h2>
+<%
+    OracleConnectPool oPool = new OracleConnectPool();
+    oPool.close();
 %>
 </body>
 </html>

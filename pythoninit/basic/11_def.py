@@ -10,7 +10,7 @@ def lines():
 # 2) 함수 정의(매개변수 있고, 리턴타입 없음)
 def lines(str):
     print(f'{str:=^30}')
-lines() # 파이썬에서는 overloading이 없기 때문에 최종 함수로 적용
+# lines() # 파이썬에서는 overloading이 없기 때문에 최종 함수로 적용
 lines("def")
 
 #3) 함수 정의(매개변수가 없고, 리턴타입 있음)
@@ -22,3 +22,18 @@ print(lines())
 def lines(str):
   return f"{" "+str+" ":=^30}"
 print(lines("python"))
+
+
+def calculator(a, b, c=0):
+    return a+b+c
+print(calculator(1,2))
+
+def add(*arg):
+    print(type(arg)) # arg는 tuple 타입
+    total = 0
+    for item in arg:
+        total += item
+    return total
+
+print(add(1,2,3,4,5,6,7))
+print(add(1,2,3,))

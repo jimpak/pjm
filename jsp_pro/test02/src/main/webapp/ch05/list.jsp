@@ -44,7 +44,7 @@
       %>
   <tr>
     <td><%=m.getMno()%></td>
-    <td><a href="detail.jsp?id=<%=m.getId()%>"><%=m.getId()%></a></td>
+    <td><a href="detail.jsp?mno=<%=m.getMno()%>"><%=m.getId()%></a></td>
     <td><%=m.getPass()%></td>
     <td><%=m.getName()%></td>
     <td><%=m.getRegidate()%></td>

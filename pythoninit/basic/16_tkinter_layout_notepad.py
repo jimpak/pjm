@@ -2,9 +2,19 @@ import tkinter as tk
 from tkinter import *
 from tkinter.filedialog import *
 from tkinter import scrolledtext
+from tkinter.messagebox import askyesno
 
 def new_file():
-    text_area.delete(1.0, END)
+    # if(len(text_area.get(1.0, END).strip()) > 0): # space 공백만 입력 시 else로 진입. 공백입력 시에도 알림창 떠야함.
+    if (len(str(text_area.get(1.0, END))) > 1): # space 공백만 입력한 경우에도 알림창이 뜨도록 설정.
+        answer = askyesno("확인", "저장하시겠습니까?")
+        if(answer == True):
+            save_file()
+            text_area.delete(1.0, END)
+        else: text_area.delete(1.0, END)
+    else:
+        text_area.delete(1.0, END)
+
 
 def save_file():
     f = asksaveasfilename(
@@ -12,15 +22,17 @@ def save_file():
         defaultextension='.txt',
         filetypes=[('text Files', '.txt')]
     )
-    save_tmp = str(text_area.get(1.0, END))
-    with open(f, 'w', encoding='UTF-8') as file:
-        file.write(save_tmp + "\n")
+
+    if (f.strip() != ""):
+        save_tmp = str(text_area.get(1.0, END))
+        with open(f, 'w', encoding='UTF-8') as file:
+            file.write(save_tmp + "\n")
 
 def open_file():
     f = askopenfilename(
         initialdir='/',
         title="Select a file",
-        filetypes = [('text Files', '.txt'),('Python Files', '.py')]
+        filetypes = [('text Files', '.txt'), ('Python Files', '.py'), ('CSV Files', '.csv')]
     )
     text_area.delete(1.0, END) # 기존 텍스트 지우기
     with open(f, 'r', encoding='UTF-8') as file:

@@ -1,6 +1,5 @@
 <%@ page import="membership.MemberDTO" %>
 <%@ page import="membership.MemberDAO" %>
-<%@ page import="membership.MemberDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String userId = request.getParameter("user_id");

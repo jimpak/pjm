@@ -16,7 +16,7 @@ public class OracleJDBConnect {
             String pwd = "1234";
             conn = DriverManager.getConnection(url, id, pwd);
 
-            System.out.println("Oracle JDBC1!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            System.out.println("Oracle JDBC1 Connect!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -3,7 +3,7 @@ def printList(pList):
         print(data, end="\t")
     print()
 
-with open("../data/new_singer1.csv", "r") as inFp:
+with open("../../data/new_singer1.csv", "r") as inFp:
     # 헤더
     header = inFp.readline()
     header = header.strip()

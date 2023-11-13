@@ -34,7 +34,7 @@ print("""큰 바다 있고 푸른 하늘 가진
 # print의 속성 : self, *args, sep=' ', end='\n', file=none
 # range(시작숫자, 종료숫자, step)
 print(1, 2, 3, 4, 5, sep="😎")
-with open('./beautiful_country.txt', 'w') as f:
+with open('beautiful_country.txt', 'w') as f:
     print("""저 산자락에 긴 노을 지면 
 걸음 걸음도 살며시 달님이 오시네""", file=f)
 

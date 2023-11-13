@@ -1,5 +1,5 @@
-with open("../singer1.csv", "r") as inFp :
-    with open("new_singer2.csv", "w") as outFp:
+with open("../../data/singer1.csv", "r") as inFp :
+    with open("../../data/new_singer2.csv", "w") as outFp:
         header = inFp.readline()
         header = header.strip()
         header_list= header.split(',')

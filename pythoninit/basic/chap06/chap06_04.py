@@ -1,5 +1,5 @@
-with open("../data/new_singer1.csv", "r") as inFp:
-    with open("../data/out_singer1.csv", "w") as outFp:
+with open("../../data/new_singer1.csv", "r") as inFp:
+    with open("../../data/out_singer1.csv", "w") as outFp:
         # 헤더
         header = inFp.readline()
         header = header.strip() # 공백 제거. strip():문자열 및 공백을 제거해 주는 함수.

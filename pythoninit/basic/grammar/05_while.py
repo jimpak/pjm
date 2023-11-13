@@ -1,5 +1,4 @@
 import Bomb
-import random
 from tkinter import simpledialog
 
 a = list(range(1, 10))

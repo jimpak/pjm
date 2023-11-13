@@ -1,4 +1,4 @@
-inFp = open("../data/new_singer1.csv", "r")
+inFp = open("../../data/new_singer1.csv", "r")
 inStr = inFp.readline()
 print(inStr, end=" ")
 

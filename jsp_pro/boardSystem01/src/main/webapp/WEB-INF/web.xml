@@ -19,7 +19,7 @@
     <context-param>
         <param-name>MySQLURL</param-name>
         <!-- &amp; 표시 안할 시 오류발생 -->
-        <param-value>jdbc:mysql://localhost:3306/jspdb?useSSL=false&amp;serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8</param-value>
+        <param-value>jdbc:mysql://localhost:3306/boarddb?useSSL=false&amp;serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8</param-value>
     </context-param>
     <context-param>
         <param-name>MySQLId</param-name>

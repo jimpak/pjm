@@ -15,7 +15,7 @@
         // 로그인 성공
         session.setAttribute("userId", memberDTO.getId());
         session.setAttribute("userName", memberDTO.getName());
-        response.sendRedirect("loginForm.jsp");
+        response.sendRedirect("../board/list.jsp");
     } else {
         // 로그인 실패
         request.setAttribute("loginErrMsg", "로그인 오류입니다.");

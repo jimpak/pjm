@@ -6,8 +6,9 @@ outWorkbook = xlwt.Workbook()
 idx = 4 # 평균 키의 인덱스
 
 wsheetList = workbook.sheets()
-outSheet = outWorkbook.add_sheet("singer")
 worksheet = wsheetList[0]
+
+outSheet = outWorkbook.add_sheet("singer")
 for col in range(worksheet.ncols):
     outSheet.write(0, col, worksheet.cell_value(0, col))
 

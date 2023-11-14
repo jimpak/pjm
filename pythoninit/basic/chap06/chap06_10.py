@@ -20,7 +20,7 @@ workSheet = []
 ## 메인 코드부
 window = Tk()
 
-with open("../../data/singer1.csv", "r") as inFp :
+with open("data/singer1.csv", "r") as inFp :
     csvReader = csv.reader(inFp) # csv파일을 읽어드린 집합 객체
     header_list = next(csvReader) # 한줄 읽음
     csvList.append(header_list) # 제목 붙이기

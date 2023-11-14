@@ -9,7 +9,7 @@ firstYN = True
 ## 메인 코드부
 for input_file in file_list :
     with open(input_file, "r") as inFp :
-            with open("../../data/강원인구통합.csv", "a", newline='') as outFp:
+            with open("data/강원인구통합.csv", "a", newline='') as outFp:
                 csvReader = csv.reader(inFp)
                 csvWriter = csv.writer(outFp)
                 header_list = next(csvReader)

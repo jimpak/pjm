@@ -1,8 +1,8 @@
 import csv
 
-with open("../../data/singerA.csv", "r") as inFpA :
-    with open("../../data/singerB.csv", "r") as inFpB:
-        with open("../../data/singerSum.csv", "w", newline='') as outFp:
+with open("data/singerA.csv", "r") as inFpA :
+    with open("data/singerB.csv", "r") as inFpB:
+        with open("data/singerSum.csv", "w", newline='') as outFp:
             csvReaderA = csv.reader(inFpA) # csv를 읽어드린 집합 객체
             csvReaderB = csv.reader(inFpB) # csv를 읽어드린 집합 객체
             csvWriter = csv.writer(outFp) # csv를 쓰기 위한 집합 객체

@@ -23,6 +23,7 @@
     <title>$Title$</title>
 </head>
 <body>
+<jsp:include page="../common/link.jsp"></jsp:include>
 <h2>게시글 목록보기</h2>
 <h3>게시물 수 : <%=totalCount%></h3>
 <form method="get">
@@ -80,8 +81,8 @@
 </table>
 <table border="1" width="80%">
   <tr>
-    <td>
-      <button type="button" onclick="location.href='write.jps'">글쓰기</button>
+    <td align="right">
+      <button type="button" onclick="location.href='write.jsp'">글쓰기</button>
     </td>
   </tr>
 </table>

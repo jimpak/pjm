@@ -1,10 +1,10 @@
 import openpyxl
 from copy import copy
 
-workbook = openpyxl.load_workbook('c:/CookAnalysis/Excel/singer.xlsx')
-wsheetList = workbook.sheetnames
+workbook = openpyxl.load_workbook('./Excel/singer.xlsx')
+wsheetList = workbook.sheetnames # 액셀파일의 시트이름만 리스트로 생성
 
-outWorkbook = openpyxl.Workbook()
+outWorkbook = openpyxl.Workbook() # xlsx파일을 생성
 outWorkbook.remove(outWorkbook['Sheet']) # 기본으로 생성된 시트를 일단 제거
 
 for wsName in wsheetList :
@@ -24,5 +24,5 @@ for wsName in wsheetList :
                 outCell.number_format = copy(inCell.number_format)
                 outCell.alignment = copy(inCell.alignment)
 
-outWorkbook.save('c:/CookAnalysis/Excel/singer_copy.xlsx')
+outWorkbook.save('./Excel/singer_copy.xlsx')
 print("Save. OK~")

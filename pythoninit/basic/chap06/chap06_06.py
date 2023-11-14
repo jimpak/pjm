@@ -1,4 +1,4 @@
-with open("../../data/singer2.csv", "r") as inFp :
+with open("data/singer2.csv", "r") as inFp :
     header = inFp.readline()
     header = header.strip()
     header_list = header.split(',')

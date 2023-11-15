@@ -6,7 +6,7 @@
     BoardDAO dao = new BoardDAO();
     int iResult = dao.deletePost(num);
     if(iResult == 1) {
-        JSFunction.alertLocation("해당 게시물이 정상적으로 삭제되었습니다", "list.jsp", out);
+        JSFunction.alertLocation("해당 게시물이 정상적으로 삭제되었습니다", "pagingList.jsp", out);
     } else {
         JSFunction.alertBack("삭제 실패", out);
     }

@@ -18,7 +18,7 @@
                 var form = document.viewFrm;
                 form.method = "post";
                 form.action = "deleteProcess.jsp";
-                form.onsubmit();
+                form.submit();
             }
         }
     </script>

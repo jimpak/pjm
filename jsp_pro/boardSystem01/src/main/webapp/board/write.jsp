@@ -27,7 +27,7 @@
 </head>
 <body>
 <h2>게시글 등록 폼</h2>
-<form name="wirteFrm" method="post" action="writeProcess.jsp" onsubmit="return validateForm(this)">
+<form name="wirteFrm" method="post" action="pagingWriteProcess.jsp" onsubmit="return validateForm(this)">
     <table>
         <tr><td>제목</td><td><input type="text" name="title" style="width: 80%"></td></tr>
         <tr><td>내용</td><td><textarea name="content" style="width: 80%; height: 100px"></textarea></td></tr>

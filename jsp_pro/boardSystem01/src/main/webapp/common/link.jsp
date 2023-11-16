@@ -13,6 +13,8 @@
       <a href="../member/logout.jsp">로그아웃</a>
       &nbsp;&nbsp;
       <a href="../board/list.jsp">게시판 페이징(x)</a>
+      &nbsp;&nbsp;
+      <a href="../board/pagingList.jsp">게시판 페이징(o)</a>
       <% } %>
     </td>
   </tr>

@@ -1,9 +1,10 @@
 package model1.member;
 
 import common.JDBConnect;
+import common.OracleJDBConnect;
 import jakarta.servlet.ServletContext;
 
-public class MemberDAO extends JDBConnect {
+public class MemberDAO extends OracleJDBConnect {
 
     // 명시한 데이터베이스로의 연결이 완료딘 MemberDAO 객체를 생성.
     public MemberDAO(){}

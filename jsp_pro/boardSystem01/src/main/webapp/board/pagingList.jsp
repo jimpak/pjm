@@ -3,6 +3,7 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.List" %>
 <%@ page import="model1.board.BoardDTO" %>
+<%@ page import="utils.BoardPage" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
   BoardDAO dao = new BoardDAO();
@@ -29,10 +30,11 @@
   }
 
   // 목록에 출력할 게시물 범위 계산
-  int start = (pageNum - 1) * pageSize;
+//  int start = (pageNum - 1) * pageSize;
+  int start = (pageNum - 1) * pageSize + 1;
   int end = pageNum * pageSize; // mysql에서는 필요없지만 오라클에서는 end값 필요
   param.put("start", start);
-  param.put("pageSize", pageSize);
+  param.put("end", end);
 
   List<BoardDTO> boardDTOList = dao.selectPagingList(param);
   dao.close();
@@ -101,8 +103,8 @@
 </table>
 <table border="1" width="80%">
   <tr>
-    <td>
-
+    <td align="center">
+      <%=BoardPage.pagingStr(totalCount, pageSize, blockSize, pageNum, request.getRequestURI())%>
     </td>
     <td align="right">
       <button type="button" onclick="location.href='write.jsp'">글쓰기</button>

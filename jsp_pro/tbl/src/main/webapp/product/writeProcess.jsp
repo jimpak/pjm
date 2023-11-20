@@ -1,12 +1,15 @@
 <%@ page import="utils.JSFunction" %>
 <%@ page import="model1.product.ProductDTO" %>
 <%@ page import="model1.product.ProductDAO" %>
+<%@ page import="model1.member.MemberDTO" %>
+<%@ page import="model1.member.MemberDAO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String pname = request.getParameter("pname");
     String description = request.getParameter("description");
     int price = Integer.parseInt(request.getParameter("price"));
     int amount = Integer.parseInt(request.getParameter("amount"));
+
     ProductDTO dto = new ProductDTO();
     dto.setUser_id(session.getAttribute("userId").toString());
     dto.setPname(pname);

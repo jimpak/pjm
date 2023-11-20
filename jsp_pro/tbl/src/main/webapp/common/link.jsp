@@ -9,11 +9,10 @@
     <td align="center">
       <% if(session.getAttribute("userId") == null) { %>
       <a href="../member/loginForm.jsp">로그인</a>
+      &nbsp;
+      <a href="../member/register.jsp">회원가입</a>
       <% } else { %>
       <a href="../member/logout.jsp">로그아웃</a>
-      &nbsp;&nbsp;
-      <a href="../board/list.jsp">게시판 페이징(x)</a>
-      &nbsp;&nbsp;
       <% } %>
     </td>
   </tr>

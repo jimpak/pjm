@@ -43,7 +43,7 @@
 </head>
 <body>
 <jsp:include page="../common/link.jsp"/>
-<h2>게시글 수정 폼</h2>
+<h2>상품 수정 폼</h2>
 <form name="editFrm" method="post" action="editProcess.jsp" onsubmit="return validateForm(this)">
     <input type="hidden" name="pcode" value="<%=pcode%>">
     <table>

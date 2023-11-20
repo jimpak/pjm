@@ -1,6 +1,7 @@
 package model1.member;
 
 import common.JDBConnect;
+import model1.product.ProductDTO;
 
 public class MemberDAO extends JDBConnect {
 
@@ -33,6 +34,44 @@ public class MemberDAO extends JDBConnect {
             e.printStackTrace();
         }
         return dto;
+    }
+
+    public int insertRegister(MemberDTO dto) {
+        int iResult = -1;
+
+        String sql = "insert into tbl_member(user_id, user_pass, user_name) values(?,?,?)";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, dto.getUser_id());
+            pstmt.setString(2, dto.getUser_pass());
+            pstmt.setString(3, dto.getUser_name());
+            iResult = pstmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return iResult;
+    }
+
+    public int updateMilage(MemberDTO mdto) {
+        int iResult = -1;
+        ProductDTO pdto = new ProductDTO();
+
+        String sql = "UPDATE tbl_member";
+        sql += " SET milage = (SELECT COUNT(*) FROM tbl_product WHERE user_id=?)";
+        sql += " WHERE user_id = ?";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, pdto.getUser_id());
+            pstmt.setString(2, mdto.getUser_id());
+            iResult = pstmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return iResult;
     }
 
 }

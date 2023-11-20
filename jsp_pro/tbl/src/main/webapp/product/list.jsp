@@ -47,8 +47,8 @@
 </head>
 <body>
 <jsp:include page="../common/link.jsp"></jsp:include>
-<h2>게시글 목록보기</h2>
-<h3>게시물 수 : <%=totalCount%></h3>
+<h2>상품 목록보기</h2>
+<h3>상품 수 : <%=totalCount%></h3>
 <c:set var="searchField" value="<%=searchField%>"/>
 <c:set var="searchWord" value="<%=searchWord%>"/>
 <c:set var="productList" value="<%=productDTOList%>"/>
@@ -87,7 +87,7 @@
 
   <c:choose>
     <c:when test="${empty productList}"> <%-- if(boardDTOList.isEmpty()) { --%>
-      <tr><td colspan="7" align="center">등록된 게시글이 없습니다</td></tr>
+      <tr><td colspan="7" align="center">등록된 상품이 없습니다</td></tr>
     </c:when>
     <c:otherwise> <%-- } else { --%>
       <c:forEach var="dto" items="${productList}"> <%-- for(BoardDTO dto:boardDTOList) { --%>
@@ -110,7 +110,7 @@
       <%=ProductPage.pagingStr(totalCount, pageSize, blockSize, pageNum, request.getRequestURI())%>
     </td>
     <td align="right">
-      <button type="button" onclick="location.href='write.jsp'">글쓰기</button>
+      <button type="button" onclick="location.href='write.jsp'">상품등록</button>
     </td>
   </tr>
 </table>

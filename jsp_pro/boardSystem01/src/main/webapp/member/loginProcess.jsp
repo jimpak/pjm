@@ -15,7 +15,7 @@
         // 로그인 성공
         session.setAttribute("userId", memberDTO.getId());
         session.setAttribute("userName", memberDTO.getName());
-        response.sendRedirect("../board/pagingList.jsp");
+        response.sendRedirect("../board/list.do");
     } else {
         // 로그인 실패
         request.setAttribute("loginErrMsg", "로그인 오류입니다.");

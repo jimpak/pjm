@@ -27,7 +27,7 @@
 </head>
 <body>
 <h2>게시글 등록 폼</h2>
-<form name="wirteFrm" method="post" action="pagingWriteProcess.jsp" onsubmit="return validateForm(this)">
+<form name="wirteFrm" method="post" action="/board/write.do" onsubmit="return validateForm(this)">
     <table>
         <tr><td>제목</td><td><input type="text" name="title" style="width: 80%"></td></tr>
         <tr><td>내용</td><td><textarea name="content" style="width: 80%; height: 100px"></textarea></td></tr>
@@ -35,7 +35,7 @@
             <td colspan="2">
                 <button type="submit">게시글 등록</button>
                 <button type="reset">새로고침</button>
-                <button type="button" onclick="location.href='pagingList.jsp'">목록보기</button>
+                <button type="button" onclick="location.href='list.do'">목록보기</button>
             </td>
         </tr>
     </table>

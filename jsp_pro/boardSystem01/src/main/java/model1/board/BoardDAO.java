@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class BoardDAO extends OracleJDBConnect {
+public class BoardDAO extends JDBConnect {
     public BoardDAO() {
         super();
     }
@@ -35,23 +35,23 @@ public class BoardDAO extends OracleJDBConnect {
 
     public List<BoardDTO> selectPagingList(Map<String, Object> map) {
         List<BoardDTO> bbs = new ArrayList<BoardDTO>();
-//        String query = "select * from board";
-        String query = "select * from ("
-                + " select Tb.*, rownum rNum from("
-                + " select  * from board ";
+        String query = "select * from board";
+//        String query = "select * from ("
+//                + " select Tb.*, rownum rNum from("
+//                + " select  * from board ";
 
         if(map.get("searchWord") != null) {
             query += " where " + map.get("searchField")
                     + " like '%" + map.get("searchWord") + "%'";
         }
-        query += " order by num desc) Tb ) "
-                + " where rNum between ? and ?";
-//        query += " order by num desc limit ?, ?";
+//        query += " order by num desc) Tb ) "
+//                + " where rNum between ? and ?";
+        query += " order by num desc limit ?, ?";
 
         try {
             pstmt = conn.prepareStatement(query);
             pstmt.setInt(1, Integer.parseInt(map.get("start").toString()));
-            pstmt.setInt(2, Integer.parseInt(map.get("end").toString()));
+            pstmt.setInt(2, Integer.parseInt(map.get("pageSize").toString()));
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 BoardDTO dto = new BoardDTO();
@@ -84,7 +84,8 @@ public class BoardDAO extends OracleJDBConnect {
             rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 BoardDTO dto = new BoardDTO();
-                dto.setNum(rs.getInt("num"));
+                dto.setNum
+                        (rs.getInt("num"));
                 dto.setTitle(rs.getString("title"));
                 dto.setContent(rs.getString("content"));
                 dto.setId(rs.getString("id"));
@@ -102,25 +103,24 @@ public class BoardDAO extends OracleJDBConnect {
     public int insertWrite(BoardDTO dto) {
         int iResult = -1;
 
-        String oracleSql = "select seq_board_num.nextval from dual";
-//        String sql = "insert into board(id, title, content) values(?,?,?)"; // mysql
-        String sql = "insert into board(id, title, content, num) values(?,?,?,?)"; // oracle
+//        String oracleSql = "select seq_board_num.nextval from dual";
+        String sql = "insert into board(id, title, content) values(?,?,?)"; // mysql
+//        String sql = "insert into board(id, title, content, num) values(?,?,?,?)"; // oracle
 
         try {
-            int num = -1;
-            //oracle
-            stmt = conn.createStatement();
-            rs = stmt.executeQuery(oracleSql);
-            if(rs.next()) {
-                num = rs.getInt(1);
-            }
-
+//            int num = -1;
+//            //oracle
+//            stmt = conn.createStatement();
+//            rs = stmt.executeQuery(oracleSql);
+//            if(rs.next()) {
+//                num = rs.getInt(1);
+//            }
 
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, dto.getId());
             pstmt.setString(2, dto.getTitle());
             pstmt.setString(3, dto.getContent());
-            pstmt.setInt(4, num); // oracle
+//            pstmt.setInt(4, num); // oracle
             iResult = pstmt.executeUpdate();
 
         } catch (Exception e) {

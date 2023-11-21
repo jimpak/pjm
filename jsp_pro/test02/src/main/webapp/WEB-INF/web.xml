@@ -25,6 +25,15 @@
         <url-pattern>/ch12/helloServlet.do</url-pattern>
     </servlet-mapping>
 
+<!--    <servlet>-->
+<!--        <servlet-name>testServlet</servlet-name>-->
+<!--        <servlet-class>servlet.TestServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>testServlet</servlet-name>-->
+<!--        <url-pattern>/servlet/test.do</url-pattern>-->
+<!--    </servlet-mapping>-->
+
 <!--    <resource-ref>-->
 <!--        <description>Oracle Datasource example</description>-->
 <!--        <res-ref-name>dbcp_oracle</res-ref-name>-->

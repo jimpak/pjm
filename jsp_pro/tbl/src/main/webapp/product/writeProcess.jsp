@@ -21,6 +21,10 @@
     int iResult = dao.insertWrite(dto);
     dao.close();
 
+    MemberDAO mdao = new MemberDAO();
+    mdao.updateMilage(dto);
+    mdao.close();
+
     if(iResult == 1) {
         response.sendRedirect("list.jsp");
     } else {

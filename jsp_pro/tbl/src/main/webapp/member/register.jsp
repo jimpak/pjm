@@ -27,13 +27,13 @@
 <form name="registerFrm" method="post" action="../member/registerProcess.jsp" onsubmit="return validateForm(this)">
     <table>
         <tr><td>아이디 : </td><td><input type="text" name="user_id" style="width: 80%"></td></tr>
-        <tr><td>비밀번호 : </td><td><input type="password" name="user_pass" style="width: 80%; height: 100px"></td></tr>
+        <tr><td>비밀번호 : </td><td><input type="password" name="user_pass" style="width: 80%"></td></tr>
         <tr><td>사용자명 : </td><td><input type="text" name="user_name" style="width: 80%"></td></tr>
         <tr>
             <td colspan="2">
-                <button type="submit">게시글 등록</button>
+                <button type="submit">회원가입</button>
                 <button type="reset">새로고침</button>
-                <button type="button" onclick="location.href='list.jsp'">목록보기</button>
+                <button type="button" onclick="location.href='../product/list.jsp'">목록보기</button>
             </td>
         </tr>
     </table>

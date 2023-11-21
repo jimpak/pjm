@@ -26,7 +26,7 @@
 </head>
 <body>
 <jsp:include page="../common/link.jsp"></jsp:include>
-<h2>회원제 게시판 상세보기</h2>
+<h2>상품리스트</h2>
 <c:set var="dto" value="<%=dto%>"/>
 <form name="viewFrm">
     <input type="hidden" name="pcode" value="<%=pcode%>">

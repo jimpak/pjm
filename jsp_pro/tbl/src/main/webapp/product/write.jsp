@@ -36,7 +36,7 @@
     </script>
 </head>
 <body>
-<h2>게시글 등록 폼</h2>
+<h2>상품등록 폼</h2>
 <form name="wirteFrm" method="post" action="writeProcess.jsp" onsubmit="return validateForm(this)">
     <table>
         <tr><td>상품명 : </td><td><input type="text" name="pname" style="width: 80%"></td></tr>
@@ -45,7 +45,7 @@
         <tr><td>수량 : </td><td><input type="text" name="amount" style="width: 80%"></td></tr>
         <tr>
             <td colspan="2">
-                <button type="submit">게시글 등록</button>
+                <button type="submit">상품등록</button>
                 <button type="reset">새로고침</button>
                 <button type="button" onclick="location.href='list.jsp'">목록보기</button>
             </td>

@@ -55,23 +55,44 @@ public class MemberDAO extends JDBConnect {
         return iResult;
     }
 
-    public int updateMilage(MemberDTO mdto) {
+    public int updateMilage(ProductDTO dto) {
         int iResult = -1;
-        ProductDTO pdto = new ProductDTO();
 
         String sql = "UPDATE tbl_member";
         sql += " SET milage = (SELECT COUNT(*) FROM tbl_product WHERE user_id=?)";
         sql += " WHERE user_id = ?";
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, pdto.getUser_id());
-            pstmt.setString(2, mdto.getUser_id());
+            pstmt.setString(1, dto.getUser_id());
+            pstmt.setString(2, dto.getUser_id());
             iResult = pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return iResult;
+    }
+
+    public MemberDTO selectInfo(String userId) {
+        MemberDTO dto = null;
+        String sql = "select * from tbl_member where user_id=?";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, userId);
+            rs = pstmt.executeQuery();
+            if(rs.next()) {
+                dto = new MemberDTO();
+                dto.setUser_id(userId);
+                dto.setUser_pass(rs.getString("user_pass"));
+                dto.setUser_name(rs.getString("user_name"));
+                dto.setRegidate(rs.getDate("regidate"));
+                dto.setMilage(rs.getInt("milage"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return dto;
     }
 
 }

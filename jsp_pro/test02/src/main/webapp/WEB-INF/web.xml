@@ -16,14 +16,14 @@
         <res-auth>Container</res-auth>
     </resource-ref>
     
-    <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>servlet.HelloServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/ch12/helloServlet.do</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>HelloServlet</servlet-name>-->
+<!--        <servlet-class>servlet.HelloServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>HelloServlet</servlet-name>-->
+<!--        <url-pattern>/ch12/helloServlet.do</url-pattern>-->
+<!--    </servlet-mapping>-->
 
 <!--    <servlet>-->
 <!--        <servlet-name>testServlet</servlet-name>-->

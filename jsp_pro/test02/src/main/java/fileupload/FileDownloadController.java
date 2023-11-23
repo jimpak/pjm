@@ -6,17 +6,20 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
-import java.util.List;
+import java.io.*;
 
-@WebServlet("/upload/fileList.do")
-public class FileListController extends HttpServlet {
+@WebServlet("/upload/download.do")
+public class FileDownloadController extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        MyFileDAO dao = new MyFileDAO();
-        List<MyFileDTO> fileList = dao.selectFileList();
-        req.setAttribute("fileList", fileList);
 
-        req.getRequestDispatcher("/ch13/fileList.jsp").forward(req, resp);
+        String originalFileName = req.getParameter("oName");
+        String saveFileName = req.getParameter("sName");
+
+        FileUtil.download(req, resp, originalFileName, saveFileName);
     }
+
+
+
 }

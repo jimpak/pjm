@@ -6,23 +6,26 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.Part;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
-@WebServlet("/upload/fileUpload.do")
+@WebServlet("/upload/multiUpload.do")
 @MultipartConfig(maxFileSize = 1024*1204*1, maxRequestSize = 1024*1024*5)
-public class FileUploadController extends HttpServlet {
+public class MultiUploadController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/ch13/fileUploadForm.jsp").forward(req, resp);
+        req.getRequestDispatcher("/ch13/multiUploadForm.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
             String saveDirectory = getServletContext().getRealPath("/uploads");
+            // 멀티 업로드
+            ArrayList<String> listFileName = FileUtil.multipleFile(req, saveDirectory);
+
             String originalFileName = FileUtil.uploadFile(req, saveDirectory);
             String savedFileName = FileUtil.renameFile(saveDirectory, originalFileName);
             insertMyFile(req, originalFileName, savedFileName);

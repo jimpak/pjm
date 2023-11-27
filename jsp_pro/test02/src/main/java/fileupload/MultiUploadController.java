@@ -26,13 +26,17 @@ public class MultiUploadController extends HttpServlet {
             // 멀티 업로드
             ArrayList<String> listFileName = FileUtil.multipleFile(req, saveDirectory);
 
-            String originalFileName = FileUtil.uploadFile(req, saveDirectory);
-            String savedFileName = FileUtil.renameFile(saveDirectory, originalFileName);
-            insertMyFile(req, originalFileName, savedFileName);
+            for(String originalFileName : listFileName) {
+                String savedFileName = FileUtil.renameFile(saveDirectory, originalFileName);
+                insertMyFile(req, originalFileName, savedFileName);
+            }
+
             resp.sendRedirect("/upload/fileList.do");
 
         } catch (Exception e) {
             e.printStackTrace();
+            req.setAttribute("errorMessage", "파일업로드 오류");
+            req.getRequestDispatcher("/upload/multiUpload.do").forward(req, resp);
         }
     }
 

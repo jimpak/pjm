@@ -26,26 +26,31 @@ public class PassController extends HttpServlet {
         String pass = req.getParameter("pass");
 
         MVCBoardDAO dao = new MVCBoardDAO();
-        boolean confirmed = dao.confirmPassword(pass, idx);
+        boolean confirmed = dao.confirmPassword(pass, idx, mode);
         dao.close();
 
         if(confirmed) {
-            if(mode.equals("edit")) {
+            if (mode.equals("edit")) {
                 HttpSession session = req.getSession();
                 session.setAttribute("pass", pass);
                 resp.sendRedirect("/mvcboard/edit.do?idx=" + idx);
-            } else if(mode.equals("delete")) {
+            }
+            else if (mode.equals("delete")) {
                 dao = new MVCBoardDAO();
                 MVCBoardDTO dto = dao.selectView(idx);
                 int result = dao.delete(idx);
                 dao.close();
-                if(result == 1) {
+                if (result == 1) {
                     String saveFileName = dto.getSfile();
                     FileUtil.deleteFile(req, "/uploads", saveFileName);
                 }
                 JSFunction.alertLocation(resp, "삭제되었습니다", "/mvcboard/list.do");
             }
-        } else {
+            else if (mode.equals("reply_del")) {
+                resp.sendRedirect("/mvcboard/reply.do?ridx=" + idx);
+            }
+        }
+        else {
             JSFunction.alertBack(resp, "비밀번호 검증실패");
         }
     }

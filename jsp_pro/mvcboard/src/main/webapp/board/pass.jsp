@@ -3,8 +3,8 @@
 <head>
     <title>Title</title>
     <script>
-        function validateForm(form) {
-            if(form.pass.value == "") {
+        function validateForm(form){
+            if(form.pass.value==""){
                 alert("비밀번호를 입력하세요");
                 form.pass.focus();
                 return false;
@@ -13,7 +13,8 @@
     </script>
 </head>
 <body>
-<form name="passForm" method="post" action="/mvcboard/pass.do" onsubmit="return validateForm(this);">
+<form name="passForm" method="post" action="/mvcboard/pass.do"
+      onsubmit="return validateForm(this);">
     <input type="hidden" name="idx" value="${param.idx}">
     <input type="hidden" name="mode" value="${mode}">
     <table>
@@ -29,7 +30,6 @@
             </td>
         </tr>
     </table>
-
 </form>
 </body>
 </html>

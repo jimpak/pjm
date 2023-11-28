@@ -127,9 +127,15 @@ public class MVCBoardDAO extends MySQLConPool {
         }
     }
 
-    public boolean confirmPassword(String pass, int idx) {
+    public boolean confirmPassword(String pass, int idx, String mode) {
         boolean isCorr = false;
-        String sql = "select count(*) from mvcboard where pass=? and idx=?";
+        String sql = "";
+        if(mode.equals("reply_del")) {
+            sql = "select count(*) from reply where pass=? and ridx=?";
+        } else {
+            sql = "select count(*) from mvcboard where pass=? and idx=?";
+        }
+
         try {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, pass);
@@ -141,6 +147,7 @@ public class MVCBoardDAO extends MySQLConPool {
         } catch (Exception e) {
             isCorr = false;
         }
+
         return isCorr;
     }
 
@@ -176,6 +183,86 @@ public class MVCBoardDAO extends MySQLConPool {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return result;
+    }
+
+    public void downCountPlus(int idx) {
+        String sql = "update mvcboard set downcount = downcount + 1 where idx = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, idx);
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public int insertReply(ReplyDTO dto) {
+        int result = 0;
+        String sql = "insert reply(bno, name, content, pass) values(?,?,?,?)";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, dto.getBno());
+            pstmt.setString(2, dto.getName());
+            pstmt.setString(3, dto.getContent());
+            pstmt.setString(4, dto.getPass());
+            result = pstmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    public void replyCountPlus(int idx) {
+        String sql = "update mvcboard set replycount = replycount + 1 where idx = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, idx);
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<ReplyDTO> selectListReply(int bno) {
+        List<ReplyDTO> replyDTOList = new ArrayList<>();
+        String sql = "select * from reply where bno=?";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, bno);
+            rs=pstmt.executeQuery();
+            while (rs.next()) {
+                ReplyDTO dto = new ReplyDTO();
+                dto.setRidx(rs.getInt("ridx"));
+                dto.setBno(bno);
+                dto.setName(rs.getString("name"));
+                dto.setContent(rs.getString("content"));
+                dto.setPass(rs.getString("pass"));
+                dto.setPostdate(rs.getDate("postdate"));
+                replyDTOList.add(dto);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  replyDTOList;
+    }
+
+    public int replyDelete(int ridx) {
+        int result = 0;
+        String sql = "delete from reply where ridx=?";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, ridx);
+            result = pstmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("delete실행");
         return result;
     }
 }

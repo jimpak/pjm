@@ -20,6 +20,8 @@ public class ViewController extends HttpServlet {
         int idx = Integer.parseInt(req.getParameter("idx"));
         dao.updateVisitCount(idx);
         MVCBoardDTO dto = dao.selectView(idx);
+
+        List<ReplyDTO> replyDTOList = dao.selectListReply(idx);
         dao.close();
 
         String ext = null;
@@ -33,6 +35,7 @@ public class ViewController extends HttpServlet {
         if(mimeList.contains(ext)) {
             isImage = true;
         }
+        req.setAttribute("replyList", replyDTOList);
         req.setAttribute("dto", dto);
         req.setAttribute("isImg", isImage);
         req.getRequestDispatcher("/board/view.jsp").forward(req, resp);

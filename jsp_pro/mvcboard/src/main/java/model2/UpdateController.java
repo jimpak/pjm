@@ -61,7 +61,7 @@ public class UpdateController extends HttpServlet {
         dto.setContent(content);
         dto.setPass(pass);
 
-        if(originalFileName != null) {
+        if(!originalFileName.equals("")) {
             String savedFileName = FileUtil.renameFile(saveDirectory, originalFileName);
             dto.setOfile(originalFileName);
             dto.setSfile(savedFileName);

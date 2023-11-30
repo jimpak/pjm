@@ -3,7 +3,7 @@ plugins {
     id 'war'
 }
 
-group 'com.pjm'
+group 'org.pjm'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -29,13 +29,13 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 
     // https://mvnrepository.com/artifact/org.springframework/spring-core
-    implementation group: 'org.springframework', name: 'spring-core', version: '5.3.31'
+    implementation group: 'org.springframework', name: 'spring-core', version: '6.0.11'
 // https://mvnrepository.com/artifact/org.springframework/spring-context
-    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.31'
+    implementation group: 'org.springframework', name: 'spring-context', version: '6.0.11'
 // https://mvnrepository.com/artifact/org.springframework/spring-test
-    testImplementation group: 'org.springframework', name: 'spring-test', version: '5.3.31'
+    testImplementation group: 'org.springframework', name: 'spring-test', version: '6.0.11'
 // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
-    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.31'
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '6.0.11'
 // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
@@ -55,6 +55,14 @@ dependencies {
     implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
 // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
     implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.1.0'
+// https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
+    implementation group: 'org.mybatis', name: 'mybatis-spring', version: '3.0.3'
+// https://mvnrepository.com/artifact/org.springframework/spring-tx
+    implementation group: 'org.springframework', name: 'spring-tx', version: '6.0.11'
+// https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    implementation group: 'org.springframework', name: 'spring-jdbc', version: '6.0.11'
+// https://mvnrepository.com/artifact/org.mybatis/mybatis
+    implementation group: 'org.mybatis', name: 'mybatis', version: '3.5.14'
 
 }
 

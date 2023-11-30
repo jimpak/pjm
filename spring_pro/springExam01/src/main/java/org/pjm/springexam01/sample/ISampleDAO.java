@@ -1,4 +1,4 @@
-package org.pjm.springexam01.sample;
-
-public interface ISampleDAO {
-}
+//package org.pjm.springexam01.sample;
+//
+//public interface ISampleDAO {
+//}

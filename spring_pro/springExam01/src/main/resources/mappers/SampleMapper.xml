@@ -6,7 +6,16 @@
     <select id="getList" resultType="org.pjm.springexam01.dto.SampleDTO">
         select * from tbl_sample
     </select>
-<!--    <insert id="insert">-->
-<!--        insert into tbl_sample(name,age,phone) values(#{name}, #{age}, #{phone})-->
-<!--    </insert>-->
+    <insert id="insert">
+        insert into tbl_sample(name,age,phone) values(#{name}, #{age}, #{phone})
+    </insert>
+    <select id="getDTO" resultType="org.pjm.springexam01.dto.SampleDTO">
+        select * from tbl_sample where idx = #{idx}
+    </select>
+    <update id="modify">
+        update tbl_sample set name=#{name}, age=#{age}, phone=#{phone} where idx=#{idx}
+    </update>
+    <delete id="del">
+        delete from tbl_sample where idx=#{idx}
+    </delete>
 </mapper>

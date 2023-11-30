@@ -12,7 +12,7 @@ import java.sql.Connection;
 
 @Log4j2
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = "classpath:/root-context.xml")
+@ContextConfiguration(locations = "classpath:/WEB-INF/root-context.xml")
 public class DBConnectionTest {
     @Autowired
     private DataSource dataSource;

@@ -13,4 +13,10 @@ public interface SampleMapper {
 //    @Select("select * from tbl_sample")
     public List<SampleDTO> getList();
 
+    public void insert(SampleDTO dto);
+
+    public SampleDTO getDTO(int idx);
+
+    public void modify(SampleDTO dto);
+    public void del(int idx);
 }

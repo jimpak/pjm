@@ -12,10 +12,10 @@
     <select id="getDTO" resultType="org.pjm.springexam03.dto.SampleDTO">
         select * from tbl_sample where idx = #{idx}
     </select>
-    <update id="modify">
+    <update id="update">
         update tbl_sample set name=#{name}, age=#{age}, phone=#{phone} where idx=#{idx}
     </update>
-    <delete id="del">
+    <delete id="delete">
         delete from tbl_sample where idx=#{idx}
     </delete>
 </mapper>

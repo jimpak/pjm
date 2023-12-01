@@ -1,9 +1,11 @@
 package org.pjm.springexam04.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.pjm.springexam04.dto.SampleDTO;
 
 import java.util.List;
+
 
 public interface SampleMapper {
     @Select("select now()")

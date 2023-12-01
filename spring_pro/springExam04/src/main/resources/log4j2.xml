@@ -15,7 +15,7 @@
             <appender-ref ref="console" />
         </logger>
 
-        <logger name="org.pjm.springexam01.mapper" level="TRACE" additivity="false">
+        <logger name="org.pjm.springexam04.mapper" level="TRACE" additivity="false">
             <appender-ref ref="console" />
         </logger>
 

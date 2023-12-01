@@ -5,80 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1423d63-b2fe-4815-980d-8cfa2a550264" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../springExam01/src/main/resources/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam02/src/main/java/org/pjm/springexam02/dto/SampleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam02/src/main/java/org/pjm/springexam02/mapper/SampleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam02/src/main/resources/mappers/SampleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/TodoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/dto/SampleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/resources/mappers/SampleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/write.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/ex01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/write.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/springexam04/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/springexam04/dto/SampleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/SampleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/dao/SampleDAO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/dao/SampleDAO1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/mapper/SampleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/mapper/SampleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/EventSampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/EventSampleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/resources/mappers/SampleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/DBConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/DBConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/SampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam02/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam02/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam02/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/resources/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/test/java/org/pjm/springexam02/DBConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam02/src/test/java/org/pjm/springexam02/DBConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/ex02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +32,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -100,12 +54,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2YsmebhmMP7uqB4NpObCBA8AhAF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -117,7 +78,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/pjm/spring_pro/springExam04/src/main/java/org/pjm/springexam04",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/pjm/spring_pro/springExam04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,7 +103,9 @@
           </settings>
         </artifact>
       </deployment>
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="f684d885-15a6-4305-ac22-738ecdac8785" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
@@ -179,6 +143,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701322760082</updated>
       <workItem from="1701322761151" duration="4737000" />
+      <workItem from="1701391289473" duration="1051000" />
+      <workItem from="1701395542330" duration="2607000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.pjm.springexam04.mapper.SampleMapper">
+    <select id="getList" resultType="org.pjm.springexam04.dto.SampleDTO">
+        select * from tbl_sample
+    </select>
+    <insert id="insert">
+        insert into tbl_sample(name,age,phone) values(#{name}, #{age}, #{phone})
+    </insert>
+    <select id="getDTO" resultType="org.pjm.springexam04.dto.SampleDTO">
+        select * from tbl_sample where idx = #{idx}
+    </select>
+    <update id="modify">
+        update tbl_sample set name=#{name}, age=#{age}, phone=#{phone} where idx=#{idx}
+    </update>
+    <delete id="del">
+        delete from tbl_sample where idx=#{idx}
+    </delete>
+</mapper>

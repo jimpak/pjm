@@ -10,39 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8e973c-49e1-48b2-a6bf-271c16ac098a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/CommonExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/ex02.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/resources/mappers/SampleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springExam04/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/config/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +47,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -78,9 +64,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2YvhoiPNZXObkUIOUiGsv82DFau" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -92,16 +78,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/pjm/spring_pro/boardSystem/src/main/resources",
+    "last_opened_file_path": "C:/pjm/spring_pro/boardSystem/src/main/webapp/WEB-INF/views/board",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\WEB-INF\views\board" />
       <recent name="C:\pjm\spring_pro\boardSystem\src\main\resources" />
       <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp" />
     </key>
@@ -109,7 +100,55 @@
       <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat 서버.Tomcat 10.1.15">
+    <configuration name="BoardTest.testGetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boardSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
+      <option name="METHOD_NAME" value="testGetTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boardSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boardSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
+      <option name="METHOD_NAME" value="testList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -200,6 +239,13 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BoardTest.testList" />
+        <item itemvalue="JUnit.BoardTest.testInsert" />
+        <item itemvalue="JUnit.BoardTest.testGetTime" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -210,6 +256,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701412138818</updated>
       <workItem from="1701412139833" duration="3740000" />
+      <workItem from="1701416590354" duration="195000" />
+      <workItem from="1701648675385" duration="23925000" />
     </task>
     <servers />
   </component>

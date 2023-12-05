@@ -30,17 +30,26 @@
     <button type="button" id="list" class="btn btn-info">list</button>
 </div>
 <script>
-    $(function() {
-        $("#modify").click(function() {
-          location.href = "/board/modify?bno=" + `${boardDTO.bno}`
-        });
-        $(".btn-danger").click(function() {
-            location.href = "/board/remove?bno=" + `${boardDTO.bno}`
-        });
-        $("#list").click(function (){
-            location.href = "/board/list"
-        });
+    document.querySelector("#modify").addEventListener("click", function (e) {
+        self.location = `/board/modify?bno=${boardDTO.bno}&${pageRequestDTO.link}`
     })
+    document.querySelector("#remove").addEventListener("click", function (e) {
+        self.location = `/board/remove?bno=${boardDTO.bno}`
+    })
+    document.querySelector("#list").addEventListener("click", function (e) {
+        self.location = `/board/list?bno=${boardDTO.bno}&${pageRequestDTO.link}`
+    })
+    <%--$(function() {--%>
+    <%--    $("#modify").click(function() {--%>
+    <%--      location.href = "/board/modify?bno=" + `${boardDTO.bno}`--%>
+    <%--    });--%>
+    <%--    $(".btn-danger").click(function() {--%>
+    <%--        location.href = "/board/remove?bno=" + `${boardDTO.bno}`--%>
+    <%--    });--%>
+    <%--    $("#list").click(function (){--%>
+    <%--        location.href = "/board/list"--%>
+    <%--    });--%>
+    <%--})--%>
 </script>
 
 <%@include file="../includes/footer.jsp" %>

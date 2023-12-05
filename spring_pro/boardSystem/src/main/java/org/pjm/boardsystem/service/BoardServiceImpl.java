@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.pjm.boardsystem.dto.BoardDTO;
+import org.pjm.boardsystem.dto.PageRequestDTO;
+import org.pjm.boardsystem.dto.PageResponseDTO;
 import org.pjm.boardsystem.mapper.BoardMapper;
 import org.pjm.boardsystem.vo.BoardVO;
 import org.springframework.stereotype.Service;
@@ -64,6 +66,26 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public int totalCount() {
         return boardMapper.totalCount();
+    }
+
+    @Override
+    public PageResponseDTO<BoardDTO> getPagingList(PageRequestDTO pageRequestDTO) {
+        log.info("service" + pageRequestDTO);
+        List<BoardVO> voList = boardMapper.pagingList(pageRequestDTO);
+        List<BoardDTO> dtoList = voList.stream()
+                .map(vo->modelMapper.map(vo, BoardDTO.class))
+                .collect(Collectors.toList());
+
+        int total = boardMapper.pageCount(pageRequestDTO);
+
+        PageResponseDTO<BoardDTO> pageResponseDTO = PageResponseDTO
+                .<BoardDTO>withAll()
+                .dtoList(dtoList)
+                .total(total)
+                .pageRequestDTO(pageRequestDTO)
+                .build();
+
+        return pageResponseDTO;
     }
 
 

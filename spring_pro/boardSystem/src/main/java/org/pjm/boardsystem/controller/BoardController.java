@@ -4,6 +4,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.pjm.boardsystem.dto.BoardDTO;
+import org.pjm.boardsystem.dto.PageRequestDTO;
 import org.pjm.boardsystem.service.BoardService;
 import org.pjm.boardsystem.vo.BoardVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class BoardController {
     }
 
     @GetMapping({"/view", "/modify"})
-    public void view(@RequestParam("bno") int bno, Model model) {
+    public void view(@RequestParam("bno") int bno, PageRequestDTO pageRequestDTO, Model model) {
         BoardDTO boardDTO = boardService.view(bno);
         log.info("controller view():" + boardDTO);
         model.addAttribute("boardDTO", boardDTO);
@@ -81,6 +82,17 @@ public class BoardController {
     }
 
     @GetMapping("/list")
+    public void pagingList(@Valid PageRequestDTO pageRequestDTO
+                           , BindingResult bindingResult
+                           , Model model) {
+        log.info(pageRequestDTO);
+        if(bindingResult.hasErrors()) {
+            pageRequestDTO = PageRequestDTO.builder().build();
+        }
+        model.addAttribute("responseDTO", boardService.getPagingList(pageRequestDTO));
+    }
+
+//    @GetMapping("/list")
     public void list(Model model) {
         List<BoardDTO> boardDTOS = boardService.getList();
         int totalCount = boardService.totalCount();

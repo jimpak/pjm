@@ -25,10 +25,15 @@
 </form>
 </div>
 <script>
-    $(function() {
-        $(".btn-secondary").click(function () {
-            location.href = "/board/list"
-        });
+    // $(function() {
+    //     $(".btn-secondary").click(function () {
+    //         location.href = "/board/list"
+    //     });
+    // })
+
+    document.querySelector(".btn-secondary").addEventListener("click", function (e) {
+        e.preventDefault();
+        self.location=`/board/list?bno=${boardDTO.bno}&${pageRequestDTO.link}`
     })
 </script>
 

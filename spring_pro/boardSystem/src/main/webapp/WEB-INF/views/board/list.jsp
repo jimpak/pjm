@@ -42,6 +42,7 @@
             <th>제목</th>
             <th>작성자</th>
             <th>조회수</th>
+            <th>댓글 수</th>
             <th>등록일</th>
         </tr>
         </thead>
@@ -52,6 +53,7 @@
                 <td><a href="view?bno=${board.bno}&${pageRequestDTO.link}">${board.title}</a></td>
                 <td>${board.writer}</td>
                 <td>${board.visitcount}</td>
+                <td>${board.replycount}</td>
                 <td>${board.postdate}</td>
             </tr>
         </c:forEach>

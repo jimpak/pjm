@@ -4,9 +4,11 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.pjm.boardsystem.dto.ReplyDTO;
+import org.pjm.boardsystem.mapper.BoardMapper;
 import org.pjm.boardsystem.mapper.ReplyMapper;
 import org.pjm.boardsystem.vo.ReplyVO;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,9 +20,12 @@ public class ReplyServiceImpl implements ReplyService {
 
     private final ReplyMapper replyMapper;
     private final ModelMapper modelMapper;
+    private final BoardMapper boardMapper;
 
+    @Transactional
     @Override
     public int register(ReplyDTO dto) {
+        boardMapper.updateReplycount(dto.getBno(), 1);
         ReplyVO vo = modelMapper.map(dto, ReplyVO.class);
         int result = replyMapper.insertReply(vo);
         return result;
@@ -40,8 +45,11 @@ public class ReplyServiceImpl implements ReplyService {
         return result;
     }
 
+    @Transactional
     @Override
     public int remove(int rno) {
+        ReplyVO vo = replyMapper.readReply(rno);
+        boardMapper.updateReplycount(vo.getBno(), -1);
         return replyMapper.deleteReply(rno);
     }
 

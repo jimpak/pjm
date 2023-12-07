@@ -59,4 +59,7 @@
     <select id="getBoardList" resultType="org.pjm.boardsystem.vo.BoardVO">
         select * from tbl_board order by bno desc;
     </select>
+    <update id="updateReplycount">
+        update tbl_board set replycount=replycount+#{amount} where bno=#{bno}
+    </update>
 </mapper>

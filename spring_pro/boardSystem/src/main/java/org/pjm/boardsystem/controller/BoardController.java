@@ -74,6 +74,7 @@ public class BoardController {
         }
 
         int result = boardService.register(boardDTO);
+        log.info("result=" + result);
         if(result != 1) {
             redirectAttributes.addFlashAttribute("error", "데이터 업데이트 실패");
             return "redirect:/board/register";

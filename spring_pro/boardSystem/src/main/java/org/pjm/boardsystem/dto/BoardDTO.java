@@ -24,4 +24,5 @@ public class BoardDTO {
     private int visitcount;
     @Future
     private LocalDate postdate;
+    private int replycount;
 }

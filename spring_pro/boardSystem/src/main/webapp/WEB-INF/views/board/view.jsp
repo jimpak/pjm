@@ -51,39 +51,80 @@
         var bno = $("#bno").val();
         $.ajax({
             type:"get",
-            url:"/replies/list/" + bno
+            url:"/replies/list/" + bno,
+            dataType: "json",
         }).done(function(resp) {
+            console.log(resp);
             var str = "<table class='table table-bover mt-3'>";
             $.each(resp, function(key, val) {
+                // console.log('key='+key);
+                // console.log('val='+val);
+                var date = new Date(val.replydate);
+                var year = date.getFullYear();
+                var month = date.getMonth();
+                var day = date.getDate();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+                var replydate = formatTwoDisgits(year) +
+                    "." + formatTwoDisgits(month+1) +
+                    "." + formatTwoDisgits(day) +
+                    " " + formatTwoDisgits(h) +
+                    ":" + formatTwoDisgits(m) +
+                    ":" + formatTwoDisgits(s);
+
                 str += "<tr>"
                 str += "<td>" + val.rno + "</td>"
                 str += "<td>" + val.replyer + "</td>"
                 str += "<td>" + val.reply + "</td>"
-                str += "<td>" + val.replydate + "</td>"
+                str += "<td>" + replydate + "</td>"
                 str += "<td><a href='javascript:rdel(" + val.rno + ")'>삭제</a></td>"
                 str += "</tr>"
             })
             str += "</table>"
+            $("#replyResult").html("")
             $("#replyResult").html(str)
         })
     }
 
-    $("replyBtn").click(function () {
-        var data = {"bno":$("#bno").val(),
-            "reply":$("#reply").val(),
-            "replyer":$("#replyer").val()
+    $("#replyBtn").click(function () {
+        var data = {
+            "bno": $("#bno").val(),
+            "reply": $("#reply").val(),
+            "replyer": $("#replyer").val()
         }
         $.ajax({
             type: "post",
-            url: "replies/new",
-            data: data
+            url: "/replies/new",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(data)
         }).done(function (resp) {
+            alert(resp)
             console.log(resp)
+            console.log("댓글 추가 성공")
             init()
         }).fail(function () {
             console.log("댓글 추가 실패")
-        })
+        });
     })
+
+    function formatTwoDisgits(num) {
+        return num < 10 ? "0" + num : num;
+    }
+
+    function rdel(rno) {
+        $.ajax({
+            type: "delete",
+            url: "/replies/" + rno
+        }).done(function (resp){
+            alert(resp);
+            init();
+        }).fail(function () {
+            console.log("댓글 삭제 실패")
+        });
+    }
+
+    init();
 </script>
 
 <script>

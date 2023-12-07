@@ -17,4 +17,5 @@ public class BoardVO {
     private String writer;
     private int visitcount;
     private LocalDate postdate;
+    private int replycount;
 }

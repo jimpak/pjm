@@ -24,7 +24,7 @@ public class ReplyController {
         int result = replyService.register(dto);
         log.info(result);
         return result == 1 ? new ResponseEntity<>("success", HttpStatus.OK)
-                : new ResponseEntity<>("fail", HttpStatus.INTERNAL_SERVER_ERROR);
+                : new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @GetMapping("/list/{bno}")

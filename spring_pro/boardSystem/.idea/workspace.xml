@@ -10,33 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8e973c-49e1-48b2-a6bf-271c16ac098a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/ReplyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/ReplyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/ReplyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/ReplyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/ReplyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/dto/ReplyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/dto/SampleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/mapper/ReplyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/ReplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/ReplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/vo/ReplyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/join.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/aop/LogAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/SampleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/SampleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restEx/src/test/java/com/example/restex/service/AopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jsp_pro/mvcboard/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jsp_pro/mvcboard/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/ReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/ReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restEx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restEx/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -86,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/pjm/spring_pro/boardSystem/src/main/resources/mappers",
+    "last_opened_file_path": "C:/pjm/spring_pro/boardSystem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,22 +119,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat 서버.Tomcat 10.1.15">
-    <configuration name="BoardTest.testGetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
-      <option name="METHOD_NAME" value="testGetTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BoardTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="boardSystem" />
       <extension name="coverage">
@@ -159,6 +146,22 @@
       <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
       <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
       <option name="METHOD_NAME" value="testList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boardSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.MemberTest" />
+      <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -288,11 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MemberTest.testInsert" />
         <item itemvalue="JUnit.ReplyTest.getListTest" />
         <item itemvalue="JUnit.ReplyTest.testInsert" />
         <item itemvalue="JUnit.BoardTest.testList" />
         <item itemvalue="JUnit.BoardTest.testInsert" />
-        <item itemvalue="JUnit.BoardTest.testGetTime" />
       </list>
     </recent_temporary>
   </component>
@@ -309,6 +312,9 @@
       <workItem from="1701648675385" duration="23925000" />
       <workItem from="1701735241074" duration="23445000" />
       <workItem from="1701821556436" duration="11599000" />
+      <workItem from="1701908016516" duration="7697000" />
+      <workItem from="1701918241469" duration="8000" />
+      <workItem from="1701919205488" duration="13412000" />
     </task>
     <servers />
   </component>

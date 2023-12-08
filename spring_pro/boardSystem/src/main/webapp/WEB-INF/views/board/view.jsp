@@ -25,8 +25,10 @@
         <label class="form-date-label">PostDate</label>
         <input class="form-date-input" type="date" id="postdate" value="${boardDTO.postdate}" readonly>
     </div>
-    <button type="button" id="modify" class="btn btn-primary">modify</button>
-    <button type="button" id="remove" class="btn btn-danger">remove</button>
+    <c:if test="${boardDTO.writer == member.nick}">
+        <button type="button" id="modify" class="btn btn-primary">modify</button>
+        <button type="button" id="remove" class="btn btn-danger">remove</button>
+    </c:if>
     <button type="button" id="list" class="btn btn-info">list</button>
 </div>
 
@@ -34,29 +36,32 @@
 
 <div class="container mt-3">
     <h2>댓글 리스트</h2>
-    <div class="mb-3 mt-3">
-        <label for="reply" class="form-label">Reply:</label>
-        <textarea class="form-control" rows="3" id="reply" name="reply" placeholder="댓글을 입력하세요"></textarea>
-    </div>
-    <div class="mb-3 mt-3">
-        <label for="replyer" class="form-label">Replyer:</label>
-        <input type="text" class="form-control" id="replyer" name="replyer">
-    </div>
-    <button type="button" id="replyBtn" class="btn btn-primary">댓글 추가</button>
+    <c:if test="${boardDTO.writer == member.nick}">
+        <div class="mb-3 mt-3">
+            <label for="reply" class="form-label">Reply:</label>
+            <textarea class="form-control" rows="3" id="reply" name="reply" placeholder="댓글을 입력하세요"></textarea>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="replyer" class="form-label">Replyer:</label>
+            <input type="text" class="form-control" id="replyer" name="replyer" value="${member.nick}" readonly>
+        </div>
+        <button type="button" id="replyBtn" class="btn btn-primary">댓글 추가</button>
+    </c:if>
+    <div id="replyResult"></div>
 </div>
-<div id="replyResult"></div>
+
 
 <script>
-    var init = function() {
+    var init = function () {
         var bno = $("#bno").val();
         $.ajax({
-            type:"get",
-            url:"/replies/list/" + bno,
+            type: "get",
+            url: "/replies/list/" + bno,
             dataType: "json",
-        }).done(function(resp) {
+        }).done(function (resp) {
             console.log(resp);
             var str = "<table class='table table-bover mt-3'>";
-            $.each(resp, function(key, val) {
+            $.each(resp, function (key, val) {
                 // console.log('key='+key);
                 // console.log('val='+val);
                 var date = new Date(val.replydate);
@@ -67,7 +72,7 @@
                 var m = date.getMinutes();
                 var s = date.getSeconds();
                 var replydate = formatTwoDisgits(year) +
-                    "." + formatTwoDisgits(month+1) +
+                    "." + formatTwoDisgits(month + 1) +
                     "." + formatTwoDisgits(day) +
                     " " + formatTwoDisgits(h) +
                     ":" + formatTwoDisgits(m) +
@@ -78,7 +83,9 @@
                 str += "<td>" + val.replyer + "</td>"
                 str += "<td>" + val.reply + "</td>"
                 str += "<td>" + replydate + "</td>"
-                str += "<td><a href='javascript:rdel(" + val.rno + ")'>삭제</a></td>"
+                if ("${member.nick}" == val.replyer) {
+                    str += "<td><a href='javascript:rdel(" + val.rno + ")'>삭제</a></td>"
+                }
                 str += "</tr>"
             })
             str += "</table>"
@@ -116,7 +123,7 @@
         $.ajax({
             type: "delete",
             url: "/replies/" + rno
-        }).done(function (resp){
+        }).done(function (resp) {
             alert(resp);
             init();
         }).fail(function () {
@@ -128,26 +135,26 @@
 </script>
 
 <script>
-    document.querySelector("#modify").addEventListener("click", function (e) {
-        self.location = `/board/modify?bno=${boardDTO.bno}&${pageRequestDTO.link}`
-    })
-    document.querySelector("#remove").addEventListener("click", function (e) {
-        self.location = `/board/remove?bno=${boardDTO.bno}`
-    })
-    document.querySelector("#list").addEventListener("click", function (e) {
-        self.location = `/board/list?bno=${boardDTO.bno}&${pageRequestDTO.link}`
-    })
-    <%--$(function() {--%>
-    <%--    $("#modify").click(function() {--%>
-    <%--      location.href = "/board/modify?bno=" + `${boardDTO.bno}`--%>
-    <%--    });--%>
-    <%--    $(".btn-danger").click(function() {--%>
-    <%--        location.href = "/board/remove?bno=" + `${boardDTO.bno}`--%>
-    <%--    });--%>
-    <%--    $("#list").click(function (){--%>
-    <%--        location.href = "/board/list"--%>
-    <%--    });--%>
+    <%--document.querySelector("#modify").addEventListener("click", function (e) {--%>
+    <%--    self.location = `/board/modify?bno=${boardDTO.bno}&${pageRequestDTO.link}`--%>
     <%--})--%>
+    <%--document.querySelector("#remove").addEventListener("click", function (e) {--%>
+    <%--    self.location = `/board/remove?bno=${boardDTO.bno}`--%>
+    <%--})--%>
+    <%--document.querySelector("#list").addEventListener("click", function (e) {--%>
+    <%--    self.location = `/board/list?${pageRequestDTO.link}`--%>
+    <%--})--%>
+    $(function () {
+        $("#modify").click(function () {
+            location.href = "/board/modify?bno=" + `${boardDTO.bno}` + "&" + `${pageRequestDTO.link}`
+        });
+        $(".btn-danger").click(function () {
+            location.href = "/board/remove?bno=" + `${boardDTO.bno}`
+        });
+        $("#list").click(function () {
+            location.href = "/board/list?" + `${pageRequestDTO.link}`
+        });
+    })
 </script>
 
 <%@include file="../includes/footer.jsp" %>

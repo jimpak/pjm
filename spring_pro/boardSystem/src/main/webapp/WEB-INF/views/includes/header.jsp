@@ -20,9 +20,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="/board/list">게시물 리스트</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/board/register">게시물 등록</a>
-            </li>
+            <c:if test="${not empty member}">
+                <li class="nav-item">
+                    <a class="nav-link" href="/board/register">게시물 등록</a>
+                </li>
+            </c:if>
+            <c:choose>
+                <c:when test="${empty member}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/member/login">로그인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/member/join">회원가입</a>
+                    </li>
+                </c:when>
+                <c:otherwise>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/member/logout">로그아웃</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/member/info?username=${member.username}">내 정보</a>
+                    </li>
+                </c:otherwise>
+            </c:choose>
         </ul>
     </div>
 </nav>

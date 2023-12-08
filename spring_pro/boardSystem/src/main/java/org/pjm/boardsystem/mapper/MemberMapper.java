@@ -3,10 +3,16 @@ package org.pjm.boardsystem.mapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.pjm.boardsystem.vo.MemberVO;
 
+import java.util.List;
+
 @Mapper
 public interface MemberMapper {
-    public int insertMember(MemberVO vo);
-    public int updateMember(MemberVO vo);
-    public int deleteMember(String username);
-    public int selectMember(String username);
+    int insertMember(MemberVO vo);
+    int updateMember(MemberVO vo);
+    int deleteMember(String username);
+    MemberVO readMember(String username);
+    List<MemberVO> getMemberList();
+    int conformUsername(String username);
+    int conformNickname(String nickname);
+
 }

@@ -7,5 +7,9 @@ public interface MemberService {
     int join(MemberDTO dto);
     int modify(MemberDTO dto);
     int remove(String username);
-    boolean conformUsername(String username);
+    int conformUsername(String username);
+    int conformNickname(String nickname);
+    MemberDTO get(String username);
+
+    MemberDTO loginPro(String username, String password);
 }

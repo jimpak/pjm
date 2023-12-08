@@ -27,4 +27,10 @@ public class MemberTest {
         memberService.join(dto);
     }
 
+    @Test
+    public void testUpdate() throws Exception {
+        MemberDTO dto = new MemberDTO();
+        dto.setPassword("asdf");
+        memberService.modify(dto);
+    }
 }

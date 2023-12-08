@@ -13,11 +13,11 @@
     <textarea class="form-control" rows="5" id="content" name="content"></textarea>
     <div class="mb-3">
         <label for="writer" class="form-label">Writer:</label>
-        <input type="text" class="form-control" id="writer" placeholder="Enter writer" name="writer">
+        <input type="text" class="form-control" id="writer" value="${member.username}" name="writer" readonly>
     </div>
     <div class="mb-3">
         <label class="form-date-label">PostDate</label>
-        <input class="form-date-input" type="date" name="postdate"> Remember me
+        <input class="form-date-input" type="date" name="postdate">
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
     <button type="reset" class="btn btn-secondary">Reset</button>

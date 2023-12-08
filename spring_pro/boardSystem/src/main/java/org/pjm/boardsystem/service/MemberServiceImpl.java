@@ -36,9 +36,44 @@ public class MemberServiceImpl implements MemberService {
         return memberMapper.deleteMember(username);
     }
 
+//    @Override
+//    public boolean conformUsername(String username) {
+//        int count = memberMapper.conformUsername(username);
+//        if(count>0)
+//            return true;
+//        return false;
+//    }
+//
+//    @Override
+//    public boolean conformNickname(String nickname) {
+//        int count = memberMapper.conformNickname(nickname);
+//        if(count>0)
+//            return true;
+//        return false;
+//    }
+
     @Override
-    public boolean conformUsername(String username) {
-        int result = memberMapper.selectMember(username);
-        return result;
+    public int conformUsername(String username) {
+        return memberMapper.conformUsername(username);
+    }
+
+    @Override
+    public int conformNickname(String nickname) {
+        return memberMapper.conformNickname(nickname);
+    }
+
+    @Override
+    public MemberDTO get(String username) {
+        return null;
+    }
+
+    @Override
+    public MemberDTO loginPro(String username, String password) {
+        MemberVO vo = memberMapper.readMember(username);
+        if(vo.getPassword().equals(password)) {
+            MemberDTO dto = modelMapper.map(vo, MemberDTO.class);
+            return dto;
+        }
+        return null;
     }
 }

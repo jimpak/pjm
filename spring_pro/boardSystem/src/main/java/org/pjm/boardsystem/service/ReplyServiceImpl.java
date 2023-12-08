@@ -3,6 +3,7 @@ package org.pjm.boardsystem.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
+import org.pjm.boardsystem.dto.MemberDTO;
 import org.pjm.boardsystem.dto.ReplyDTO;
 import org.pjm.boardsystem.mapper.BoardMapper;
 import org.pjm.boardsystem.mapper.ReplyMapper;
@@ -61,4 +62,5 @@ public class ReplyServiceImpl implements ReplyService {
                 .collect(Collectors.toList());
         return dtoList;
     }
+
 }

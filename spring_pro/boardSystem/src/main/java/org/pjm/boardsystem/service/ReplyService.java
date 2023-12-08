@@ -1,5 +1,6 @@
 package org.pjm.boardsystem.service;
 
+import org.pjm.boardsystem.dto.MemberDTO;
 import org.pjm.boardsystem.dto.ReplyDTO;
 
 import java.util.List;
@@ -10,4 +11,5 @@ public interface ReplyService {
     int modify(ReplyDTO dto);
     int remove(int rno);
     List<ReplyDTO> getList(int bno);
+
 }

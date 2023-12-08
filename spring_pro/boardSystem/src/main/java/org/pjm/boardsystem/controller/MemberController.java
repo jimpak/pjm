@@ -1,5 +1,6 @@
 package org.pjm.boardsystem.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -51,6 +52,47 @@ public class MemberController {
     public void login() {
     }
 
+    @PostMapping("/login")
+    public String loginPro(String username, String password, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        MemberDTO dto = memberService.loginPro(username, password);
+        if (dto != null) {
+            HttpSession session = request.getSession();
+            session.setAttribute("member", dto);
+            return "redirect:/board/list";
+        }
+        redirectAttributes.addFlashAttribute("msg", "로그인 실패");
+        return "redirect:/member/login";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest req) {
+        HttpSession session = req.getSession();
+        // 아래 둘중 하나만 사용하면 됨.
+        // 1번은 member명으로 된 세션만 삭제
+        // 2번은 전체 세션 삭제
+        session.removeAttribute("member");
+//        session.invalidate();
+        return "redirect:/board/list";
+    }
+
+    @GetMapping("/info")
+    public void info() {
+
+    }
+
+    @GetMapping("/remove")
+    public String remove(HttpServletRequest req, RedirectAttributes redirectAttributes) {
+        HttpSession session = req.getSession();
+        MemberDTO dto = (MemberDTO) session.getAttribute("member");
+        int result = memberService.remove(dto.getUsername());
+        if(result == 1) {
+            session.invalidate();
+            return "redirect:/board/list";
+        }
+        redirectAttributes.addFlashAttribute("msg", "탈퇴 실패");
+        return "redirect:/member/info";
+    }
+
 
 //    @PostMapping("/login")
 //    public String login(MemberDTO memberDTO, HttpSession session) {
@@ -62,15 +104,28 @@ public class MemberController {
 //        return "/member/login";
 //    }
 
-    @GetMapping("/conformUsername")
+    @GetMapping("/conformedUsername/{username}")
     @ResponseBody
-    public ResponseEntity<String> conformUsername(@RequestParam("username") String username) {
-        boolean result = memberService.conformUsername(username);
+    public ResponseEntity<String> conformedUsername(@PathVariable("username") String username) {
+        int result = memberService.conformUsername(username);
         String str = null;
-        if(result) {
-            str = username + "은 중복됩니다.";
+        if(result > 0) {
+            str = "fail";
         } else {
-            str = username + "은 사용가능합니다";
+            str = "success";
+        }
+        return new ResponseEntity<>(str, HttpStatus.OK);
+    }
+
+    @GetMapping("/conformedNickname/{nickname}")
+    @ResponseBody
+    public ResponseEntity<String> conformedNickname(@PathVariable("nickname") String nickname) {
+        int result = memberService.conformUsername(nickname);
+        String str = null;
+        if(result > 0) {
+            str = "fail";
+        } else {
+            str = "success";
         }
         return new ResponseEntity<>(str, HttpStatus.OK);
     }

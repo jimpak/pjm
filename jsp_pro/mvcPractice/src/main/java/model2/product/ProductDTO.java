@@ -1,5 +1,7 @@
 package model2.product;
 
+import java.util.Date;
+
 public class ProductDTO {
     private int pcode;
     private String pname;
@@ -7,19 +9,29 @@ public class ProductDTO {
     private int price;
     private int amount;
     private String user_id;
+    private Date postdate;
     private int visitcount;
+    private String ofile;
+    private String sfile;
+    private int downcount;
+    private int replycount;
 
     public ProductDTO() {
     }
 
-    public ProductDTO(int pcode, String pname, String description, int price, int amount, String user_id, int visitcount) {
+    public ProductDTO(int pcode, String pname, String description, int price, int amount, String user_id, Date postdate, int visitcount, String ofile, String sfile, int downcount, int replycount) {
         this.pcode = pcode;
         this.pname = pname;
         this.description = description;
         this.price = price;
         this.amount = amount;
         this.user_id = user_id;
+        this.postdate = postdate;
         this.visitcount = visitcount;
+        this.ofile = ofile;
+        this.sfile = sfile;
+        this.downcount = downcount;
+        this.replycount = replycount;
     }
 
     public int getPcode() {
@@ -70,11 +82,51 @@ public class ProductDTO {
         this.user_id = user_id;
     }
 
+    public Date getPostdate() {
+        return postdate;
+    }
+
+    public void setPostdate(Date postdate) {
+        this.postdate = postdate;
+    }
+
     public int getVisitcount() {
         return visitcount;
     }
 
     public void setVisitcount(int visitcount) {
         this.visitcount = visitcount;
+    }
+
+    public String getOfile() {
+        return ofile;
+    }
+
+    public void setOfile(String ofile) {
+        this.ofile = ofile;
+    }
+
+    public String getSfile() {
+        return sfile;
+    }
+
+    public void setSfile(String sfile) {
+        this.sfile = sfile;
+    }
+
+    public int getDowncount() {
+        return downcount;
+    }
+
+    public void setDowncount(int downcount) {
+        this.downcount = downcount;
+    }
+
+    public int getReplycount() {
+        return replycount;
+    }
+
+    public void setReplycount(int replycount) {
+        this.replycount = replycount;
     }
 }

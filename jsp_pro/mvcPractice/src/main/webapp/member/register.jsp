@@ -1,42 +1,40 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
-    <script type="text/javascript">
-        function validateForm(form){
-            if(form.user_id.value == ""){
-                alert("아이디를 입력하세요");
-                form.user_id.focus();
-                return false;
-            }
-            if(form.user_pass.value == ""){
-                alert("비밀번호를 입력하세요");
-                form.user_pass.focus();
-                return false;
-            }
-            if(form.user_name.value == ""){
-                alert("사용자명을 입력하세요.");
-                form.user_name.focus();
-                return false;
-            }
-        }
-    </script>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-<h2>회원가입 폼</h2>
-<form name="registerFrm" method="post" action="../member/registerProcess.jsp" onsubmit="return validateForm(this)">
-    <table>
-        <tr><td>아이디 : </td><td><input type="text" name="user_id" style="width: 80%"></td></tr>
-        <tr><td>비밀번호 : </td><td><input type="password" name="user_pass" style="width: 80%"></td></tr>
-        <tr><td>사용자명 : </td><td><input type="text" name="user_name" style="width: 80%"></td></tr>
-        <tr>
-            <td colspan="2">
-                <button type="submit">회원가입</button>
-                <button type="reset">새로고침</button>
-                <button type="button" onclick="location.href='../product/list.jsp'">목록보기</button>
-            </td>
-        </tr>
-    </table>
-</form>
+<jsp:include page="../common/link.jsp"></jsp:include>
+<div class="container mt-5">
+    <h2>회원가입 폼</h2>
+    <form name="registerFrm" method="post" action="/member/join.do" onsubmit="return validateForm(this)">
+        <div class="form-group row">
+            <label name="user_id" class="col-sm-2 col-form-label">아이디 :</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="user_id" style="width: 80%">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label name="user_pass" class="col-sm-2 col-form-label">비밀번호 :</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="user_pass" style="width: 80%">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label name="user_name" class="col-sm-2 col-form-label">사용자명 :</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="user_name" style="width: 80%">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">회원가입</button>
+                <button type="reset" class="btn btn-secondary">새로고침</button>
+                <button type="button" class="btn btn-info" onclick="location.href='/product/list.do'">목록보기</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

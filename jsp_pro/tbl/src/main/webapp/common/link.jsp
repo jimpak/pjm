@@ -7,15 +7,19 @@
 <table>
   <tr>
     <td align="center">
-      <% if(session.getAttribute("userId") == null) { %>
-      <a href="../member/loginForm.jsp">로그인</a>
-      &nbsp;
-      <a href="../member/register.jsp">회원가입</a>
-      <% } else { %>
-      <a href="../member/logout.jsp">로그아웃</a>
-      &nbsp;
-      <a href="../member/info.jsp?user_id=${userId}">내 정보</a>
-      <% } %>
+      <c:choose>
+        <c:when test="${empty userId}">
+          <a href="/member/login.do">로그인</a>
+          &nbsp;
+          <a href="/member/register.do">회원가입</a>
+        </c:when>
+
+        <c:when test="${not empty userId}">
+          <a href="/member/logout.do">로그아웃</a>
+          &nbsp;
+          <a href="/member/info.do?user_id=${userId}">내 정보</a>
+        </c:when>
+      </c:choose>
     </td>
   </tr>
 </table>

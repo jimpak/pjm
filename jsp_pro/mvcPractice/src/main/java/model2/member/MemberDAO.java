@@ -1,19 +1,15 @@
 package model2.member;
 
 import common.MySQLConPool;
-import model1.product.ProductDTO;
 
 public class MemberDAO extends MySQLConPool {
 
-    public MemberDAO(){}
+    public MemberDAO(){ super(); }
 
-    public MemberDAO(String driver, String url, String id, String pwd) {
-        super(driver, url, id, pwd);
-    }
 
     public MemberDTO getMemberDTO(String uid, String upass) {
         MemberDTO dto = new MemberDTO();
-        String query = "SELECT * FROM tbl_member WHERE user_id=? AND user_pass=?";
+        String query = "SELECT * FROM tbl_member WHERE id=? AND pass=?";
 
         try {
             pstmt = conn.prepareStatement(query); // 동적 쿼리문 준비
@@ -23,11 +19,11 @@ public class MemberDAO extends MySQLConPool {
 
             if(rs.next()) {
                 // 쿼리 결가로 얻은 회원 정보를 DTO에 저장
-                dto.setUser_id(rs.getString("user_id"));
-                dto.setUser_pass(rs.getString("user_pass"));
+                dto.setId(rs.getString("id"));
+                dto.setPass(rs.getString("pass"));
                 dto.setUser_name(rs.getString("user_name"));
                 dto.setRegidate(rs.getDate("regidate"));
-                dto.setMilage(rs.getInt("milage"));
+                dto.setMileage(rs.getInt("mileage"));
             }
 
         } catch (Exception e) {
@@ -39,12 +35,12 @@ public class MemberDAO extends MySQLConPool {
     public int insertRegister(MemberDTO dto) {
         int iResult = -1;
 
-        String sql = "insert into tbl_member(user_id, user_pass, user_name) values(?,?,?)";
+        String sql = "insert into tbl_member(id, pass, user_name) values(?,?,?)";
 
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, dto.getUser_id());
-            pstmt.setString(2, dto.getUser_pass());
+            pstmt.setString(1, dto.getId());
+            pstmt.setString(2, dto.getPass());
             pstmt.setString(3, dto.getUser_name());
             iResult = pstmt.executeUpdate();
 
@@ -55,44 +51,52 @@ public class MemberDAO extends MySQLConPool {
         return iResult;
     }
 
-    public int updateMilage(ProductDTO dto) {
-        int iResult = -1;
-
-        String sql = "UPDATE tbl_member";
-        sql += " SET milage = (SELECT COUNT(*) FROM tbl_product WHERE user_id=?)";
-        sql += " WHERE user_id = ?";
-        try {
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, dto.getUser_id());
-            pstmt.setString(2, dto.getUser_id());
-            iResult = pstmt.executeUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return iResult;
-    }
-
     public MemberDTO selectInfo(String userId) {
         MemberDTO dto = null;
-        String sql = "select * from tbl_member where user_id=?";
+        String sql = "select * from tbl_member where id=?";
         try {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, userId);
             rs = pstmt.executeQuery();
             if(rs.next()) {
                 dto = new MemberDTO();
-                dto.setUser_id(userId);
-                dto.setUser_pass(rs.getString("user_pass"));
+                dto.setId(userId);
+                dto.setPass(rs.getString("pass"));
                 dto.setUser_name(rs.getString("user_name"));
                 dto.setRegidate(rs.getDate("regidate"));
-                dto.setMilage(rs.getInt("milage"));
+                dto.setMileage(rs.getInt("mileage"));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return dto;
+    }
+
+    public void mileageUpWrite(String id) {
+        String sql = "update tbl_member set mileage = mileage + 10 where id = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, id);
+            pstmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void mileageUpReply(String id) {
+        String sql = "update tbl_member set mileage = mileage + 5 where id = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, id);
+            pstmt.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

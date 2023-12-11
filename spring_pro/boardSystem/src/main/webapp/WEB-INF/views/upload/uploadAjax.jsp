@@ -42,6 +42,7 @@
     }
 </style>
 
+
 <div class="bigPictureWrapper">
     <div class="bigPicture">
 
@@ -58,6 +59,7 @@
 
 
 <script>
+
     // Reguler Expressing (정규 표현식)
     var regex = new RegExp("(.*?)\.(exe|sh|zip|alz)$");
     var maxSize = 5242880; // 5MB
@@ -80,7 +82,8 @@
         var formData = new FormData();
         var inputFile = $("input[name='uploadFile']");
         var files = inputFile[0].files;
-        console.log(files);
+
+        console.log(files); // 파일이 존재하는지 확인
 
         for (var i = 0; i < files.length; i++) {
             if (checkExtension(files[i].name, files[i].size)) {
@@ -89,28 +92,25 @@
         }
 
         $.ajax({
-            url: "/upload/uploadAjax",
-            type: "POST",
+            url: '/upload/uploadAjax',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
             processData: false,
             contentType: false,
-            data: formData,
-            dataType: "json",
-            cache: false,
-            contentType: false,
-            processData: false
         }).done(function (result) {
+            // 성공적인 응답 처리
             alert("파일업로드 성공");
             console.log(result);
             showUploadFile(result);
-            $(".uploadDiv").html(cloneObj.html())
-
+            $(".uploadDiv").html(cloneObj.html());
         }).fail(function (xhr, status, error) {
-            alert("파일 업로드 실패: " + error);
+            // 에러 처리
+            console.log("Ajax request failed: " + error);
             console.log(xhr);
             console.log(status);
-            console.log(error);
         });
-    });
+    })
 
 
     var uploadResult = $(".uploadResult");
@@ -122,6 +122,7 @@
                 // 일반파일 표시형식
                 var fileCallPath = encodeURIComponent(obj.uploadpath + "/"
                     + obj.uuid + "_" + obj.filename);
+                console.log(obj)
                 var fileLink = fileCallPath.replace(new RegExp(/\\/g), "/");
 
                 str += "<li><div><a href='/download?fileName=" + fileCallPath + "'>" +
@@ -143,6 +144,11 @@
 
         uploadResult.append(str);
     }
+
+    // $(".bigPictureWrapper").css("display", "flex").show();
+    // $(".bigPicture")
+    //     .html("<img src='/display?fileName=" + fileCallPath + "'>")
+    //     .animate({width: '100%', height: '100%'}, 1000);
 
 </script>
 

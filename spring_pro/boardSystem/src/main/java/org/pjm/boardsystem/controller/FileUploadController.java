@@ -11,16 +11,15 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -72,9 +71,7 @@ public class FileUploadController {
     @PostMapping("/uploadAjax")
     @ResponseBody
     public ResponseEntity<List<AttachFileDTO>> uploadAjaxPost(MultipartFile[] uploadFile) {
-        log.info("dddddddddddddddddddddddd");
         List<AttachFileDTO> dtoList = new ArrayList<>();
-        System.out.println(dtoList);
         String uploadFolderPath = getFolder(); // yyyy/mm/dd => 2023/12/11
         log.info("uploadFolderPath = " + uploadFolderPath);
         File uploadPath = new File(uploadFolder, uploadFolderPath); //c:/upload/yyyy/mm/dd
@@ -124,9 +121,9 @@ public class FileUploadController {
     @GetMapping("/display")
     @ResponseBody
     public ResponseEntity<byte[]> getFile(String fileName) {
-        log.info("fileName : " + fileName);
-//        File file = new File("c:\\upload\\" + fileName);
-        File file = new File(uploadFolder, fileName);
+        log.info("Original fileName : " + fileName);
+        File file = new File("c:\\upload\\" + fileName);
+//        File file = new File(uploadFolder, fileName);
         ResponseEntity<byte[]> result = null;
 
         try {
@@ -142,21 +139,63 @@ public class FileUploadController {
 
     @GetMapping(value = "/download", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     @ResponseBody
-    public ResponseEntity<Resource> downloadFile(String fileName) {
+    public ResponseEntity<Resource> downloadFile(@RequestHeader("User-Agent") String userAgent, @RequestParam("fileName") String fileName) {
         log.info("download file: " + fileName);
         Resource resource = new FileSystemResource("c:\\upload\\" + fileName);
+        if (resource.exists() == false) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
         log.info("resource: " + resource);
         String resourceName = resource.getFilename();
+        String resourceOriginalName=resourceName.substring(resourceName.lastIndexOf("_")+1);
         HttpHeaders headers = new HttpHeaders();
         try {
-            headers.add("Content-Disposition","attachment; filename=" +
-                    new String(resourceName.getBytes("UTF-8"), "ISO-8859-1"));
+            //headers.add("Content-Disposition","attachment; filename=" +
+            //new String(resourceName.getBytes("UTF-8"), "ISO-8859-1"));
+            String downloadName = null;
+
+            if (userAgent.contains("Trident")) {
+                log.info("IE browser");
+                downloadName = URLEncoder.encode(resourceOriginalName, "UTF-8")
+                        .replaceAll("\\+", " ");
+            }else if(userAgent.contains("Edge")) {
+                log.info("Edge browser");
+                downloadName =  URLEncoder.encode(resourceOriginalName,"UTF-8");
+            }else {
+                log.info("Chrome browser");
+                downloadName = new String(resourceOriginalName.getBytes("UTF-8"), "ISO-8859-1");
+            }
+
+            log.info("downloadName: " + downloadName);
+
+            headers.add("Content-Disposition", "attachment; filename=" + downloadName);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
         return new ResponseEntity<Resource>(resource, headers, HttpStatus.OK);
     }
+
+    @PostMapping("/deleteFile")
+    @ResponseBody
+    public ResponseEntity<String> deleteFile(String fileName, String type) {
+        log.info("deleteFile: " + fileName);
+        File file;
+        try { //원본파일 삭제
+            file = new File("c:\\upload\\" + URLDecoder.decode(fileName, "UTF-8"));
+            file.delete();
+            if (type.equals("image")) { //이미지 파일 Thumbnail 파일도 함께 삭제
+                String largeFileName = file.getAbsolutePath().replace("s_", ""); // getAbsolutePath : 파일의 절대 경로
+                log.info("largeFileName: " + largeFileName);
+                file = new File(largeFileName);
+                file.delete();
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<String>("deleted", HttpStatus.OK);
+    }
+
 
 
         // yyyy/mm/dd => 2023/12/11

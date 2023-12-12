@@ -6,9 +6,12 @@ import org.modelmapper.ModelMapper;
 import org.pjm.boardsystem.dto.BoardDTO;
 import org.pjm.boardsystem.dto.PageRequestDTO;
 import org.pjm.boardsystem.dto.PageResponseDTO;
+import org.pjm.boardsystem.mapper.AttachMapper;
 import org.pjm.boardsystem.mapper.BoardMapper;
+import org.pjm.boardsystem.vo.BoardAttachVO;
 import org.pjm.boardsystem.vo.BoardVO;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,6 +23,7 @@ public class BoardServiceImpl implements BoardService {
 
     private final BoardMapper boardMapper;
     private final ModelMapper modelMapper;
+    private final AttachMapper attachMapper;
 
     @Override
     public List<BoardDTO> getList() {
@@ -29,11 +33,18 @@ public class BoardServiceImpl implements BoardService {
         return boardDTOList;
     }
 
+    @Transactional
     @Override
     public int register(BoardDTO boardDTO) {
         log.info("service register:" + boardDTO);
         BoardVO boardVO = modelMapper.map(boardDTO, BoardVO.class);
         int result = boardMapper.insertBoard(boardVO);
+        System.out.println("result = " + result);
+        if(boardDTO.getAttachVOList() != null || boardDTO.getAttachVOList().size() > 0) {
+            boardDTO.getAttachVOList().forEach(attach -> {
+                attachMapper.insertAttach(attach);
+            });
+        }
         return result;
     }
 
@@ -41,6 +52,9 @@ public class BoardServiceImpl implements BoardService {
     public BoardDTO view(int bno) {
         BoardVO boardVO = boardMapper.get(bno);
         BoardDTO boardDTO = modelMapper.map(boardVO, BoardDTO.class);
+
+        boardDTO.setAttachVOList(attachMapper.findByBno(bno));
+
         if(boardDTO != null) {
             boardMapper.visitcountUpdate(bno);
         }
@@ -48,16 +62,30 @@ public class BoardServiceImpl implements BoardService {
         return boardDTO;
     }
 
+    @Transactional
     @Override
     public int modify(BoardDTO boardDTO) {
+        if(boardDTO.getAttachVOList() == null){
+            List<BoardAttachVO> attachVOList = attachMapper.findByBno(boardDTO.getBno());
+            boardDTO.setAttachVOList(attachVOList);
+        }
         BoardVO boardVO = modelMapper.map(boardDTO, BoardVO.class);
+        attachMapper.deleteAll(boardVO.getBno());
         int result = boardMapper.updateBoard(boardVO);
+        if(result == 1 && boardDTO.getAttachVOList().size() > 0) {
+            boardDTO.getAttachVOList().forEach(attach -> {
+                attach.setBno(boardDTO.getBno());
+                attachMapper.insertAttach(attach);
+            });
+        }
         log.info("service modify: result=" + result);
         return result;
     }
 
+    @Transactional
     @Override
     public int remove(int bno) {
+        attachMapper.deleteAll(bno);
         int result = boardMapper.deleteBoard(bno);
         log.info("service remove: result=" + result);
         return result;
@@ -86,6 +114,11 @@ public class BoardServiceImpl implements BoardService {
                 .build();
 
         return pageResponseDTO;
+    }
+
+    @Override
+    public List<BoardAttachVO> attachList(int bno) {
+        return attachMapper.findByBno(bno);
     }
 
 

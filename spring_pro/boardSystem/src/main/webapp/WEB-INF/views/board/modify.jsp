@@ -12,6 +12,10 @@
     </div>
     <label for="content">Content:</label>
     <textarea class="form-control" rows="5" id="content" name="content">${boardDTO.content}</textarea>
+    <div class="mb-3 mt-3">
+        <label for="uploadFile" class="form-label">첨부파일:</label>
+        <input type="file" class="form-control" id="uploadFile" name="uploadFile" multiple>
+    </div>
     <div class="mb-3">
         <label for="writer" class="form-label">Writer:</label>
         <input type="text" class="form-control" id="writer" placeholder="Enter writer" name="writer" disabled>
@@ -19,6 +23,14 @@
     <div class="mb-3">
         <label class="form-date-label">PostDate</label>
         <input class="form-date-input" type="date" name="postdate" disabled>
+    </div>
+    <div class="mb-3">
+        <label class="form-date-label">File List</label>
+        <div>
+            <c:forEach var="attach" items="${boardDTO.attachVOList}">
+                ${attach.filename} &nbsp;
+            </c:forEach>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary">Modify</button>
     <button type="button" class="btn btn-secondary">List</button>

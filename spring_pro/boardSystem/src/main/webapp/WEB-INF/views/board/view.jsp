@@ -21,6 +21,11 @@
         <label for="visitcount" class="form-label">VisitCount:</label>
         <input type="text" class="form-control" id="visitcount" value="${boardDTO.visitcount}" readonly>
     </div>
+    <td>
+        <div class="uploadResult">
+            <ul></ul>
+        </div>
+    </td>
     <div class="mb-3 mt-3">
         <label class="form-date-label">PostDate</label>
         <input class="form-date-input" type="date" id="postdate" value="${boardDTO.postdate}" readonly>
@@ -52,6 +57,31 @@
 
 
 <script>
+    var bno = $("#bno").val()
+    $.getJSON("/board/getAttachList", {bno, bno}, function (arr) {
+        console.log(arr);
+        var uploadUL = $(".uploadResult ul");
+        var str = "";
+        $(arr).each(function (i, attach) {
+            if (attach.filetype) {
+                var fileCallPath = encodeURIComponent(attach.uploadpath + "/s_" + attach.uuid + "_" + attach.filename);
+
+                str += "<li data-path='" + attach.uploadpath + "' data-uuid='" + attach.uuid + "' data-filename='" + attach.filename + "' data-type='" + attach.filetype + "' ><div>";
+                str += "<img src='/upload/display?fileName=" + fileCallPath + "'>";
+                str += "</div>";
+                str + "</li>";
+            } else {
+                str += "<li data-path='" + attach.uploadpath + "' data-uuid='" + attach.uuid + "' data-filename='" + attach.filename + "' data-type='" + attach.filetype + "' ><div>";
+                str += "<span> " + attach.filename + "</span><br/>";
+                str += " <a href='/upload/download?fileName=" + fileCallPath + "'>"
+                str += "<img src='/resources/img/attach.png'></a>";
+                str += "</div>";
+                str + "</li>";
+            }
+        })
+        uploadUL.append(str);
+    })
+
     var init = function () {
         var bno = $("#bno").val();
         $.ajax({

@@ -113,42 +113,54 @@
     })
 
 
-    var uploadResult = $(".uploadResult");
+    var uploadResult = $(".uploadResult ul");
 
-    function showUploadFile(uploadResultArr) {
-        var str = "";
-        $(uploadResultArr).each(function (i, obj) { // each : 한개씩 꺼내와서 처리.
-            if (!obj.image) {
+    function showUploadFile(uploadResultArr){
+        var str="";
+        $(uploadResultArr).each(function (i, obj){
+            if(!obj.image) {
                 // 일반파일 표시형식
-                var fileCallPath = encodeURIComponent(obj.uploadpath + "/"
-                    + obj.uuid + "_" + obj.filename);
-                console.log(obj)
-                var fileLink = fileCallPath.replace(new RegExp(/\\/g), "/");
+                var fileCallPath =  encodeURIComponent( obj.uploadpath+"/"+ obj.uuid +"_"+obj.filename);
 
-                str += "<li><div><a href='/download?fileName=" + fileCallPath + "'>" +
-                    "<img src='/resources/img/attach.png'>" + obj.filename + "</a>" +
-                    "<span data-file=\'" + fileCallPath + "\' data-type='file'> x </span>" +
-                    "</div></li>";
-            } else {
-                //이미지 파일 표시형식
-                var fileCallPath = encodeURIComponent(obj.uploadpath +
-                    "/s_" + obj.uuid + "_" + obj.filename);
-                var originPath = obj.uploadpath + "\\" + obj.uuid + "_" + obj.filename;
+                var fileLink = fileCallPath.replace(new RegExp(/\\/g),"/");
 
-                str += "<li><a href=\"javascript:showImage(\'" + originPath + "\')\">" +
-                    "<img src='display?fileName=" + fileCallPath + "'></a>" +
-                    "<span data-file=\'" + fileCallPath + "\' data-type='image'> x </span>" +
+                str += "<li><a href='/upload/download?fileName="+fileCallPath+"'>"+
+                    "<img src='/resources/img/attach.png'>"+obj.filename+"</a>"+
+                    "<span data-file=\'"+fileCallPath+"\' data-type='file'> x </span>"+
+                    "</li>"
+            }else{
+                var fileCallPath =  encodeURIComponent( obj.uploadpath+ "/s_"+obj.uuid +"_"+obj.filename);
+
+                var originPath = obj.uploadpath+ "\\"+obj.uuid +"_"+obj.filename;
+
+                originPath = originPath.replace(new RegExp(/\\/g),"/");
+
+                str += "<li><a href=\"javascript:showImage(\'"+originPath+"\')\">"+
+                    "<img src='display?fileName="+fileCallPath+"'></a>"+
+                    "<span data-file=\'"+fileCallPath+"\' data-type='image'> x </span>"+
                     "<li>";
             }
         });
-
         uploadResult.append(str);
     }
 
-    // $(".bigPictureWrapper").css("display", "flex").show();
-    // $(".bigPicture")
-    //     .html("<img src='/display?fileName=" + fileCallPath + "'>")
-    //     .animate({width: '100%', height: '100%'}, 1000);
+    function showImage(fileCallPath) {
+        console.log("=================");
+        console.log(fileCallPath);
+
+        $(".bigPictureWrapper").css("display", "flex").show();
+        $(".bigPicture")
+            .html("<img src='display?fileName=" + fileCallPath + "'>")
+            .animate({width: '100%', height: '100%'}, 1000);
+    }
+
+    $(".bigPictureWrapper").on("click", function () {
+        $(".bigPicture").animate({width: '0%', height: '0%'}, 1000);
+        setTimeout(function () {
+            $(".bigPicture").hide();
+        }, 1000);
+    });
+
 
 </script>
 

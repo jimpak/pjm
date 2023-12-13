@@ -30,5 +30,5 @@ public class BoardDTO {
     private int replycount;
 
     private List<BoardAttachVO> attachVOList;
-    private MultipartFile[] uploadFile;
+//    private MultipartFile[] uploadFile;
 }

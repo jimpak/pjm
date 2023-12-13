@@ -21,5 +21,6 @@ public interface BoardMapper {
     int updateBoard(BoardVO boardVO);
     int deleteBoard(int bno);
     int totalCount();
+    int getBno();
 
 }

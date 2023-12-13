@@ -2,9 +2,9 @@
 <%@ include file="../includes/header.jsp" %>
 
 <div class="container mt-3">
-<h2>게시물 등록 페이지</h2>
+<h2>게시물 수정 페이지</h2>
 <p>${error}<br><p>
-<form action="/board/modify" method="post">
+<form action="/board/modify" method="post" enctype="multipart/form-data">
     <input type="hidden" name="bno" value="${boardDTO.bno}">
     <div class="mb-3 mt-3">
         <label for="title" class="form-label">Title:</label>

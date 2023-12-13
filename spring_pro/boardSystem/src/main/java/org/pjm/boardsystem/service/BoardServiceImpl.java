@@ -40,8 +40,10 @@ public class BoardServiceImpl implements BoardService {
         BoardVO boardVO = modelMapper.map(boardDTO, BoardVO.class);
         int result = boardMapper.insertBoard(boardVO);
         System.out.println("result = " + result);
+        int bno = boardMapper.getBno();
         if(boardDTO.getAttachVOList() != null || boardDTO.getAttachVOList().size() > 0) {
             boardDTO.getAttachVOList().forEach(attach -> {
+                attach.setBno(bno);
                 attachMapper.insertAttach(attach);
             });
         }
@@ -65,13 +67,18 @@ public class BoardServiceImpl implements BoardService {
     @Transactional
     @Override
     public int modify(BoardDTO boardDTO) {
-        if(boardDTO.getAttachVOList() == null){
-            List<BoardAttachVO> attachVOList = attachMapper.findByBno(boardDTO.getBno());
-            boardDTO.setAttachVOList(attachVOList);
-        }
+//        if(boardDTO.getAttachVOList() == null){
+//            List<BoardAttachVO> attachVOList = attachMapper.findByBno(boardDTO.getBno());
+//            boardDTO.setAttachVOList(attachVOList);
+//        }
+
         BoardVO boardVO = modelMapper.map(boardDTO, BoardVO.class);
-        attachMapper.deleteAll(boardVO.getBno());
         int result = boardMapper.updateBoard(boardVO);
+
+        if(boardDTO.getAttachVOList() != null) {
+            attachMapper.deleteAll(boardVO.getBno());
+        }
+
         if(result == 1 && boardDTO.getAttachVOList().size() > 0) {
             boardDTO.getAttachVOList().forEach(attach -> {
                 attach.setBno(boardDTO.getBno());

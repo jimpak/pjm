@@ -10,21 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8e973c-49e1-48b2-a6bf-271c16ac098a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/AttachMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardAttachVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/AttachMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/FileUploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/AttachMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/AttachMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/uploadAjax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/uploadAjax.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,6 +304,7 @@
       <workItem from="1702254026210" duration="20846000" />
       <workItem from="1702279574836" duration="1115000" />
       <workItem from="1702284550386" duration="10847000" />
+      <workItem from="1702426327870" duration="6934000" />
     </task>
     <servers />
   </component>
@@ -329,6 +323,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/MemberController.java</url>
           <line>63</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/MemberTest.java</url>

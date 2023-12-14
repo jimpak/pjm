@@ -1,6 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../includes/header.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 <table>
     <tr>
         <td>bno</td>
@@ -12,12 +20,12 @@
     <c:forEach var="board" items="${boardList}">
         <tr>
             <td>${board.bno}</td>
-            <td>${board.title}</td>
+            <td><a href="/board/view?bno=${board.bno}">${board.title}</a>a</td>
             <td>${board.writer}</td>
             <td>${board.visitcount}</td>
-            <td>${board.postdate}</td>
+            <td><fmt:formatDate value="${board.postdate}"/></td>
         </tr>
     </c:forEach>
 </table>
-
-<%@include file="../includes/footer.jsp" %>
+</body>
+</html>

@@ -9,10 +9,8 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class BoardServiceImpl implements BoardService {
-
+public class BoardServiceImlpl implements BoardService{
     private final BoardMapper boardMapper;
-
     @Override
     public List<BoardDTO> getList() {
         return boardMapper.getList();
@@ -20,21 +18,22 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public int register(BoardDTO dto) {
-        return 0;
+        return boardMapper.insert(dto);
     }
 
     @Override
     public BoardDTO getBoard(int bno) {
-        return null;
+        boardMapper.visitcountUpdate(bno);
+        return boardMapper.getBoard(bno);
     }
 
     @Override
     public int modify(BoardDTO dto) {
-        return 0;
+        return boardMapper.update(dto);
     }
 
     @Override
     public int remove(int bno) {
-        return 0;
+        return boardMapper.delete(bno);
     }
 }

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="boardSystem:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8e973c-49e1-48b2-a6bf-271c16ac098a" name="변경" comment="">
+    <list default="true" id="80d4997a-2e84-4446-a111-683f86e1c4e7" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/../../Python231124/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Python231124/.idea/Python231124.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Python231124/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
@@ -1105,210 +1100,210 @@
       <change beforePath="$PROJECT_DIR$/../../spring_boot/sp_jpa01/src/main/resources/templates/script.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring_boot/sp_jpa01/src/test/java/com/example/sp_jpa01/DataSourceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring_boot/sp_jpa01/src/test/java/com/example/sp_jpa01/SpJpa01ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/spring_pro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/config/ModelMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/FileUploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/MemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/ReplyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/AttachFileDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/MemberDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/PageRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/PageResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/dto/ReplyDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/AttachMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/MemberMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/mapper/ReplyMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/MemberServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/ReplyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardAttachVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/BoardVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/MemberVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/vo/ReplyVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/AttachMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/join.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/uploadAjax.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/uploadForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/attach.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/BoardTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/MemberTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/ReplyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링1_스프링 개요 및 환경설정.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링2_Spring MVC CRUD.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링3_AJAX.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링3_Rest_Ajax.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링4_AOP와 트랜잭션.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/스프링5_파일업로드.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/aop/LogAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/controller/FileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/controller/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/dto/ReplyDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/dto/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/SampleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/service/SampleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/java/com/example/restex/vo/ReplyVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/views/upload/result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/views/upload/uploadForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restEx/src/test/java/com/example/restex/service/AopTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/dao/SampleDAO1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/dto/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/mapper/SampleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/EventSampleDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/java/org/pjm/springexam01/sample/SampleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/root-context01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/resources/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/DBConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam01/src/test/java/org/pjm/springexam01/SampleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/java/org/pjm/springexam02/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/java/org/pjm/springexam02/dto/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/java/org/pjm/springexam02/mapper/SampleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam02/src/test/java/org/pjm/springexam02/DBConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/CommonExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/controller/TodoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/dto/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/java/org/pjm/springexam03/service/SampleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/hello.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/ex02.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/update.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/sample/write.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/ex01.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/views/todo/write.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam03/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/java/org/pjm/springexam04/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/java/org/pjm/springexam04/dto/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springExam04/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/.idea/spring_pro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/config/ModelMapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/controller/FileUploadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/controller/ReplyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/AttachFileDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/BoardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/MemberDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/PageRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/PageResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/dto/ReplyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/mapper/AttachMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/mapper/BoardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/mapper/MemberMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/mapper/ReplyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/ReplyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/service/ReplyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/vo/BoardAttachVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/vo/BoardVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/vo/MemberVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/java/org/pjm/boardsystem/vo/ReplyVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/resources/mappers/AttachMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/resources/mappers/MemberMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/board/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/board/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/includes/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/includes/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/member/info.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/member/join.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/upload/uploadAjax.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/views/upload/uploadForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/main/webapp/resources/img/attach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/test/java/org/pjm/boardsystem/mapper/BoardTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/test/java/org/pjm/boardsystem/mapper/MemberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/src/test/java/org/pjm/boardsystem/mapper/ReplyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링1_스프링 개요 및 환경설정.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링2_Spring MVC CRUD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링3_AJAX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링3_Rest_Ajax.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링4_AOP와 트랜잭션.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/data/스프링5_파일업로드.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/aop/LogAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/controller/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/controller/SampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/dto/ReplyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/service/SampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/service/SampleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/java/com/example/restex/vo/ReplyVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/WEB-INF/views/upload/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/WEB-INF/views/upload/uploadForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/restEx/src/test/java/com/example/restex/service/AopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/dao/SampleDAO1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/mapper/SampleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/sample/EventSampleDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/sample/ISampleDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/sample/SampleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/java/org/pjm/springexam01/sample/SampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/resources/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/resources/root-context01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/resources/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/test/java/org/pjm/springexam01/DBConnectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam01/src/test/java/org/pjm/springexam01/SampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/java/org/pjm/springexam02/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/java/org/pjm/springexam02/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/java/org/pjm/springexam02/mapper/SampleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam02/src/test/java/org/pjm/springexam02/DBConnectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/controller/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/controller/SampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/controller/TodoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/mapper/SampleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/service/SampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/java/org/pjm/springexam03/service/SampleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/sample/ex02.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/sample/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/sample/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/sample/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/sample/write.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/todo/ex01.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/todo/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/views/todo/write.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam03/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/java/org/pjm/springexam04/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/java/org/pjm/springexam04/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/java/org/pjm/springexam04/mapper/SampleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/resources/mappers/SampleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_pro/springExam04/src/main/webapp/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ui/NanumSquare-master/NanumSquareB.eot" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ui/NanumSquare-master/NanumSquareB.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ui/NanumSquare-master/NanumSquareB.woff" beforeDir="false" />
@@ -1418,321 +1413,65 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2YvhoiPNZXObkUIOUiGsv82DFau" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZcCiypieTo2U6i7Yu4IN9A7uQc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/dev/pjm/spring_pro/boardSystem&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/dev/pjm/fc/backEnd-web/project-board",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\resources\img" />
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\WEB-INF\views\upload" />
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\resources\mappers" />
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\java\org\pjm\boardsystem\service" />
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\WEB-INF\views\board" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\pjm\spring_pro\boardSystem\src\main\webapp\WEB-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.pjm.boardsystem.vo" />
-      <recent name="org.pjm.boardsystem.mapper" />
-      <recent name="org.pjm.boardsystem.dto" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat 서버.Tomcat 10.1.15">
-    <configuration name="BoardTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.BoardTest" />
-      <option name="METHOD_NAME" value="testList" />
-      <option name="TEST_OBJECT" value="method" />
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ProjectBoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project-board.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pjm.projectboard.ProjectBoardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.MemberTest" />
-      <option name="METHOD_NAME" value="testInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.MemberTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReplyTest.getListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.ReplyTest" />
-      <option name="METHOD_NAME" value="getListTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReplyTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boardSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pjm.boardsystem.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pjm.boardsystem.mapper" />
-      <option name="MAIN_CLASS_NAME" value="org.pjm.boardsystem.mapper.ReplyTest" />
-      <option name="METHOD_NAME" value="testInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="boardSystem:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="e7fee203-f846-49c4-b6e9-41462093c9ea" />
-        <option name="HTTP_PORT" value="8082" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54560" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="boardSystem:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.BoardTest.testList" />
-      <item itemvalue="JUnit.MemberTest.testInsert" />
-      <item itemvalue="JUnit.MemberTest.testUpdate" />
-      <item itemvalue="JUnit.ReplyTest.getListTest" />
-      <item itemvalue="JUnit.ReplyTest.testInsert" />
-      <item itemvalue="Tomcat 서버.Tomcat 10.1.15" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.MemberTest.testUpdate" />
-        <item itemvalue="JUnit.MemberTest.testInsert" />
-        <item itemvalue="JUnit.ReplyTest.getListTest" />
-        <item itemvalue="JUnit.ReplyTest.testInsert" />
-        <item itemvalue="JUnit.BoardTest.testList" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="bd8e973c-49e1-48b2-a6bf-271c16ac098a" name="변경" comment="" />
-      <created>1701412138818</created>
+      <changelist id="80d4997a-2e84-4446-a111-683f86e1c4e7" name="변경" comment="" />
+      <created>1702712113105</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701412138818</updated>
-      <workItem from="1701412139833" duration="3740000" />
-      <workItem from="1701416590354" duration="195000" />
-      <workItem from="1701648675385" duration="23925000" />
-      <workItem from="1701735241074" duration="23445000" />
-      <workItem from="1701821556436" duration="11599000" />
-      <workItem from="1701908016516" duration="7697000" />
-      <workItem from="1701918241469" duration="8000" />
-      <workItem from="1701919205488" duration="13412000" />
-      <workItem from="1701994363761" duration="18930000" />
-      <workItem from="1702254026210" duration="20846000" />
-      <workItem from="1702279574836" duration="1115000" />
-      <workItem from="1702284550386" duration="10847000" />
-      <workItem from="1702426327870" duration="8097000" />
+      <updated>1702712113105</updated>
+      <workItem from="1702712114105" duration="998000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/MemberController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/controller/MemberController.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/pjm/boardsystem/service/BoardServiceImpl.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/pjm/boardsystem/mapper/MemberTest.java</url>
-          <line>30</line>
-          <properties class="org.pjm.boardsystem.mapper.MemberTest" method="testUpdate">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

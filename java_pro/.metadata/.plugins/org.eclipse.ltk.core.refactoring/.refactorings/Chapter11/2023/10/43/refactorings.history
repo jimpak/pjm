@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;practice.java&apos; to &apos;Chapter12/src/generics&apos;&#x0D;&#x0A;- Original project: &apos;Chapter11&apos;&#x0D;&#x0A;- Destination element: &apos;Chapter12/src/generics&apos;&#x0D;&#x0A;- Original element: &apos;classex.practice.java&apos;" description="Copy compilation unit" destination="=Chapter12/src&lt;generics" element1="/src&lt;classex{practice.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1698027035549" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+package exception;
+
+public class PasswordException extends Exception {
+	public IDFormatException(String message) {
+		super(message);
+}

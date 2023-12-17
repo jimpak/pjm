@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="demo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f368cf96-8166-4b94-b31e-57cad0d00b65" name="Changes" comment="upload">
+      <change afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/DownloadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/ReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/java/fileupload/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/fileupload/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/MVCBoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/MVCBoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/PassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/PassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/UpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/java/model2/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/webapp/board/pass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/webapp/board/pass.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvcboard/src/main/webapp/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../mvcboard/src/main/webapp/board/view.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jimpak&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="68060146-fd93-4786-a8f2-93f4c10e1109" />
+        <option name="url" value="https://github.com/jimpak/pjm.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XW2XfXI3SXoTUQG5IGShmvWwpl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/pjm/jsp_pro/test02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch13" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch07" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch07\inc" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch05" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch12" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch05" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\webapp\ch04" />
+      <recent name="C:\pjm\jsp_pro\test02\src\main\java\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fileupload" />
+      <recent name="common" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ff4d7ac5-4ae3-4c6b-b9b7-32a760271b19" />
+        <option name="HTTP_PORT" value="8082" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57428" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="test02:war exploded" />
+          <artifact name="demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f368cf96-8166-4b94-b31e-57cad0d00b65" name="Changes" comment="" />
+      <created>1698730557120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698730557120</updated>
+      <workItem from="1698730558107" duration="7413000" />
+      <workItem from="1698814467429" duration="9827000" />
+      <workItem from="1698824310552" duration="169000" />
+      <workItem from="1698901059309" duration="2565000" />
+      <workItem from="1698903635676" duration="10028000" />
+      <workItem from="1698987220004" duration="10422000" />
+      <workItem from="1699329954558" duration="13449000" />
+      <workItem from="1699415860534" duration="4349000" />
+      <workItem from="1699423431774" duration="9530000" />
+      <workItem from="1699505561242" duration="12854000" />
+      <workItem from="1699591733598" duration="12342000" />
+      <workItem from="1700198011983" duration="7363000" />
+      <workItem from="1700457166248" duration="7543000" />
+      <workItem from="1700465478785" duration="910000" />
+      <workItem from="1700528980339" duration="19000" />
+      <workItem from="1700542789821" duration="2621000" />
+      <workItem from="1700629203233" duration="41000" />
+      <workItem from="1700630014481" duration="11035000" />
+      <workItem from="1700641139594" duration="33000" />
+      <workItem from="1700641196676" duration="79000" />
+      <workItem from="1700715372119" duration="9336000" />
+      <workItem from="1700791544288" duration="229000" />
+      <workItem from="1700791781496" duration="143000" />
+      <workItem from="1700791936177" duration="6472000" />
+      <workItem from="1700804420648" duration="2453000" />
+      <workItem from="1701044188644" duration="16000" />
+      <workItem from="1701047758076" duration="640000" />
+      <workItem from="1701148169909" duration="1318000" />
+    </task>
+    <task id="LOCAL-00001" summary="upload">
+      <option name="closed" value="true" />
+      <created>1698987640375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698987640375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/ch04/popupMain.jsp</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

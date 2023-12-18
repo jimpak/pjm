@@ -33,13 +33,13 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public Board getBoard(Long bno) {
-//        Board board = boardRepository.findById(bno).get();
+        Board board = boardRepository.findById(bno).get();
 //        return board;
-//        Board board = boardRepository.findById(bno).get();
-//        board.setVisitcount(board.getVisitcount()+1);
-//        boardRepository.save(board);
-        boardRepository.updateVisitCount(bno);
-        return boardRepository.findById(bno).get();
+
+        board.setVisitcount(board.getVisitcount()+1);
+        boardRepository.save(board);
+//        boardRepository.updateVisitCount(bno);
+        return board;
     }
 
     @Override

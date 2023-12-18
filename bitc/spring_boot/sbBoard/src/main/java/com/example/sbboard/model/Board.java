@@ -1,16 +1,22 @@
 package com.example.sbboard.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
+@ToString
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "jpa_board")
-public class Board {
+public class Board extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bno;
@@ -23,6 +29,5 @@ public class Board {
     private String writer;
     @ColumnDefault("0")
     private int visitcount;
-    @CreationTimestamp // 데이터를 생성할 때 시간
-    private Timestamp postdate;
+
 }

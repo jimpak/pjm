@@ -15,8 +15,8 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
     @Query("select b from Board b where b.content like %:keyword% " +
             "order by b.bno desc")
     List<Board> findByContentLike(@Param("keyword") String keyword);
-    List<Board> findByContentContaining(String keyword);
-
+    List<Board> findByContentContainingOrderByBno(String keyword);
+    List<Board> findByTitleOrContent(String keyword);
 
     @Transactional
     @Modifying(clearAutomatically = true)

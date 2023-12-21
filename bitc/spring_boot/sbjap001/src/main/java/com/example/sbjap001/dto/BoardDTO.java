@@ -6,8 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -24,5 +27,7 @@ public class BoardDTO {
     private int visitcount;
     private LocalDateTime regDate;
     private LocalDateTime modDate;
+
+    private List<MultipartFile> files;
 
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/basic.html}" lang="en">
+
+<div layout:fragment="content">
+    <form method="post" action="/upload/uploadPro" enctype="multipart/form-data">
+        <div>
+            title : <input name="title" type="text">
+        </div>
+        <div>
+            content : <textarea name="content" cols="50" rows="5" type="text"></textarea>
+        </div>
+        <div>
+            <input type="file" name="files" multiple>
+        </div>
+        <div>
+            <button type="submit">전송</button>
+        </div>
+    </form>
+</div>
+</html>

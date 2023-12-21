@@ -5,6 +5,7 @@ import com.example.sbjap001.dto.BoardListReplyCountDTO;
 import com.example.sbjap001.dto.PageRequestDTO;
 import com.example.sbjap001.dto.PageResponseDTO;
 import com.example.sbjap001.service.BoardService;
+import com.example.sbjap001.service.UploadFileService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Pageable;
@@ -23,44 +24,50 @@ import java.util.List;
 public class BoardController {
 
     private final BoardService boardService;
+    private final UploadFileService uploadFileService;
 
     @GetMapping("/register")
-    public void register(){
+    public void register() {
 
     }
+
     @PostMapping("/register")
-    public String register(BoardDTO boardDTO){
-        Long bno=boardService.register(boardDTO);
-        if(bno!=null){
+    public String register(BoardDTO boardDTO) {
+        Long bno = boardService.register(boardDTO);
+        if (bno != null) {
             log.info(bno);
             return "redirect:/board/list";
         }
         return "redirect:/board/register";
     }
 
-    @GetMapping({"/view","modify"})
-    public void view(Long bno, PageRequestDTO pageRequestDTO,Model model){
+    @GetMapping({"/view", "/modify"})
+    public void view(Long bno, PageRequestDTO pageRequestDTO, Model model) {
+        model.addAttribute("fileList", uploadFileService.getList(bno));
+        model.addAttribute("dto", boardService.getBoard(bno));
+    }
 
-        model.addAttribute("dto",boardService.getBoard(bno));
-    }
     @PostMapping("/modify")
-    public String modify(BoardDTO boardDTO){
-        Long bno=boardService.modify(boardDTO);
-        if(bno != null){
-            return "redirect:/board/view?bno="+bno;
+    public String modify(BoardDTO boardDTO) {
+        Long bno = boardService.modify(boardDTO);
+        if (bno != null) {
+            return "redirect:/board/view?bno=" + bno;
         }
-        return "redirect:/board/modify?bno="+bno;
+        return "redirect:/board/modify?bno=" + bno;
     }
+
     @GetMapping("/remove")
-    public String remove(Long bno){
+    public String remove(Long bno) {
+        uploadFileService.remove(bno);
         boardService.remove(bno);
         return "redirect:/board/list";
     }
+
     @GetMapping("/list")
-    public void list(PageRequestDTO pageRequestDTO, Model model){
+    public void list(PageRequestDTO pageRequestDTO, Model model) {
         log.info(pageRequestDTO);
         //PageResponseDTO<BoardDTO> responseDTO=boardService.listDsl(pageRequestDTO);
-        PageResponseDTO<BoardListReplyCountDTO> responseDTO=
+        PageResponseDTO<BoardListReplyCountDTO> responseDTO =
                 boardService.listWidReplyCount(pageRequestDTO);
         log.info(responseDTO);
         model.addAttribute("responseDTO", responseDTO);

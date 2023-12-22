@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/basic.html}" lang="en">
+<div layout:fragment="content">
+    <div class="container">
+        <h3>게시판 상세페이지</h3>
+        <div class="form-group mt-3">
+            <label for="num">번호:</label>
+            <input type="text" class="form-control" id="num"
+                   th:value="${board.num}" name="num" disabled>
+        </div>
+        <div class="form-group mt-3">
+            <label for="title">제목:</label>
+            <input type="text" class="form-control" id="title"
+                   th:value="${board.title}" name="title" disabled>
+        </div>
+        <div class="form-group mt-3">
+            <label for="content">내용:</label>
+            <textarea class="form-control" id="content"
+                      name="content" disabled>[[${board.content}]]</textarea>
+        </div>
+        <div class="form-group mt-3">
+            <label for="writer">작성자:</label>
+            <input type="text" class="form-control" id="writer"
+                   th:value="${board.writer}" name="writer" disabled>
+        </div>
+        <div class="form-group mt-3">
+            <label for="regdate">작성자:</label>
+            <input type="text" class="form-control" id="regdate"
+                   th:value="${board.regdate}" name="regdate" disabled>
+        </div>
+        <div class="form-group mt-3">
+            <span th:if="${#authentication.principal.username == board.getWriter()}">
+                <a th:href="|@{/board/modify(num=${board.num})}|">
+                    <button type="button" class="btn btn-primary">Modify</button>
+                </a>
+                <a th:href="|@{/board/remove(num=${board.num})}|">
+                    <button type="button" class="btn btn-secondary">Remove</button>
+                </a>
+            </span>
+            <button type="button" class="btn btn-info">List</button>
+        </div>
+    </div>
+</div>

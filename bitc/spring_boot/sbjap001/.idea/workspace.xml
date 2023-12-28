@@ -5,63 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b24d89f5-3d79-4fbc-8a68-290114cf219b" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/example/sbjap001/domain/QBaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/example/sbjap001/domain/QBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/example/sbjap001/domain/QMemberEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/example/sbjap001/domain/QReply.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/example/sbjap001/domain/QUploadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/Sbjap001Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/config/RootConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/controller/FileUploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/controller/ReplyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/domain/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/domain/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/domain/MemberEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/domain/Reply.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/domain/UploadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/BoardDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/BoardListReplyCountDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/PageRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/PageResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/ReplyDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/UploadFileDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/dto/UploadResultDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/repository/BoardRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/repository/ReplyRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/repository/UploadFileRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/repository/search/BoardSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/repository/search/BoardSearchImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/BoareServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/ReplyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/ReplyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/UploadFileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sbjap001/service/UploadFileServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/attach.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/reply.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board/modify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/upload/uploadForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/upload/uploadPro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/sbjap001/Sbjap001ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/sbjap001/repository/ReplyRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/sbjap001/repository/RepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/generated/com/example/sbjap001/domain/QBaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/generated/com/example/sbjap001/domain/QBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/generated/com/example/sbjap001/domain/QMemberEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/generated/com/example/sbjap001/domain/QReply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/generated/com/example/sbjap001/domain/QUploadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/Sbjap001Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/controller/FileUploadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/controller/ReplyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/FileModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/MemberEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/Reply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/domain/UploadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/BoardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/BoardListReplyCountDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/PageRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/PageResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/ReplyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/upload/UploadFileDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/dto/upload/UploadResultDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/repository/BoardRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/repository/FileModelRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/repository/ReplyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/repository/search/BoardSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/repository/search/BoardSearchImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/BoareServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/FileModeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/FileModelServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/ReplyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sbjap001/service/ReplyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/board/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/layout/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/layout/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/upload/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/upload/uploadForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/main/resources/templates/upload/uploadPro.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/resources/templates/upload/uploadPro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/test/java/com/example/sbjap001/Sbjap001ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/test/java/com/example/sbjap001/repository/ReplyRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sb02/src/test/java/com/example/sbjap001/repository/RepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springSecurity.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springSecurity/src/main/resources/templates/board/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springSecurity/src/main/resources/templates/board/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springSecurity/src/main/resources/templates/board/view.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/pjm/bitc/spring_boot/sbjap001/src/main/resources/static/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/pjm/bitc/spring_boot/sb02&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -207,30 +203,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.sbjap001.repository.RepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="RepositoryTest.testSelect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,6 +225,28 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="sbjap001 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="sbjap001 [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -288,10 +282,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.sbjap001 [compileJava]" />
+        <item itemvalue="Gradle.sbjap001 [clean]" />
         <item itemvalue="Gradle.ReplyRepositoryTest.testSelectReplyCount" />
         <item itemvalue="Gradle.RepositoryTest.testSelect" />
         <item itemvalue="Gradle.ReplyRepositoryTest.testRepliesSelect" />
-        <item itemvalue="Gradle.RepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -309,6 +303,8 @@
       <workItem from="1703030504981" duration="19681000" />
       <workItem from="1703118177710" duration="20474000" />
       <workItem from="1703204018314" duration="768000" />
+      <workItem from="1703643166687" duration="853000" />
+      <workItem from="1703645232471" duration="613000" />
     </task>
     <servers />
   </component>

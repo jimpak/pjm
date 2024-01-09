@@ -20,3 +20,4 @@ public class UploadFile extends BaseEntity {
     @JoinColumn(name="bno")
     private Board board;
 }
+

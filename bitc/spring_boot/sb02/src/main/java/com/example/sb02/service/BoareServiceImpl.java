@@ -47,7 +47,6 @@ public class BoareServiceImpl implements BoardService {
         board.updateVisitcount();
         BoardDTO boardDTO = modelMapper.map(board, BoardDTO.class);
         return boardDTO;
-
     }
 
     @Override
@@ -109,6 +108,3 @@ public class BoareServiceImpl implements BoardService {
 //    public List<Board> getByTitleContent(String keyword) {
 //        return boardRepository.findByTitleOrContentContains(keyword);
 //    }
-
-
-

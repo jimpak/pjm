@@ -36,7 +36,7 @@ public class CommentRepositoryCustomImpl implements CommentRepositoryCustom {
         queryFactory.update(comment)
                 .set(comment.rightNum, comment.rightNum.add(2))
                 .where(comment.root.eq(newComment.getRoot())
-                        .and(comment.rightNum.goe(newComment.getLeftNum())))
+                        .and(comment.rightNum.gt(newComment.getLeftNum())))
                 .execute();
     }
 

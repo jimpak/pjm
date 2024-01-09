@@ -32,18 +32,19 @@ import java.util.UUID;
 @Log4j2
 @RequestMapping("/upload")
 public class FileUploadController {
-// application.properties에 설정된 uploadPath
+    // application.properties에 설정된 uploadPath
     @Value("${com.example.sb02.upload.path}")
     private String uploadPath; // d:\\upload = 이걸 변수화 했다고 보면 됨
 
     @GetMapping("/uploadForm")
-    public void uploadForm(){}
+    public void uploadForm() {
+    }
 
     @PostMapping(value = "/uploadPro", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public void upload(UploadFileDTO uploadFileDTO, Model model){
+    public void upload(UploadFileDTO uploadFileDTO, Model model) {
         log.info(uploadFileDTO.getTitle());
         log.info(uploadFileDTO.getContent());
-        if(uploadFileDTO.getFiles()!=null){
+        if (uploadFileDTO.getFiles() != null) {
             final List<UploadResultDTO> list = new ArrayList<>();
 //            for(int i=0; i<uploadFileDTO.getFiles().size(); i++) for문 대신에 forEach구문을 쓴다.
             uploadFileDTO.getFiles().forEach(multipartFile -> {
@@ -51,17 +52,17 @@ public class FileUploadController {
                 log.info(originalFileName);
 //                uploadPath = uploadPath+"\\"+getFolder(); for 구문을 썼다면 이걸 추가해서 경로를 설정 (이때 getFolder() 함수를 만들어야 함)
                 String uuid = UUID.randomUUID().toString();
-                Path savePath = Paths.get(uploadPath, uuid+"_"+originalFileName);
+                Path savePath = Paths.get(uploadPath, uuid + "_" + originalFileName);
                 boolean image = false;
 
-                try{
+                try {
                     multipartFile.transferTo(savePath);
-                    if(Files.probeContentType(savePath).startsWith("image")){
-                        image=true;
-                        File thumbFile = new File(uploadPath, "s_"+uuid+"_"+originalFileName);
-                        Thumbnailator.createThumbnail(savePath.toFile(), thumbFile, 200,200);
+                    if (Files.probeContentType(savePath).startsWith("image")) {
+                        image = true;
+                        File thumbFile = new File(uploadPath, "s_" + uuid + "_" + originalFileName);
+                        Thumbnailator.createThumbnail(savePath.toFile(), thumbFile, 200, 200);
                     }
-                }catch (IOException e){
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
 
@@ -76,18 +77,19 @@ public class FileUploadController {
 //                        .filename(originalFileName)
 //                        .image(image).build());
             });
-        model.addAttribute("fileList", list);
+            model.addAttribute("fileList", list);
         }
     }
+
     @GetMapping("/disply/{fileName}")
-    public ResponseEntity<Resource> disply(@PathVariable("fileName") String fileName){
-        Resource resource = new FileSystemResource(uploadPath+File.separator+fileName);
+    public ResponseEntity<Resource> disply(@PathVariable("fileName") String fileName) {
+        Resource resource = new FileSystemResource(uploadPath + File.separator + fileName);
         String resourceName = resource.getFilename();
         HttpHeaders headers = new HttpHeaders();
 
-        try{
+        try {
             headers.add("Content-Type", Files.probeContentType(resource.getFile().toPath()));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return ResponseEntity.ok().headers(headers).body(resource);

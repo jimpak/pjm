@@ -33,6 +33,6 @@ public class UserController {
         user.setPassword(enPassword);
         user.setRole("USER");
         userRepository.save(user);
-        return "redirect:/";
+        return "redirect:/user/login";
     }
 }

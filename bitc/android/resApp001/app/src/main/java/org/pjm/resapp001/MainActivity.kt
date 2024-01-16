@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         var binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.textView.text = getString(R.string.txt_data)
+//        binding.textView.text = getString(R.string.txt_data)
         binding.textView.setTextColor(ResourcesCompat.getColor(resources, R.color.blue, null))
         binding.textView.textSize = resources.getDimension(R.dimen.txt_size1)
     }

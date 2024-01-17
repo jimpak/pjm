@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="size">
+        <menu>
+            <item android:id="@+id/size20" android:title="text size : 20"/>
+            <item android:id="@+id/size30" android:title="text size : 30"/>
+            <item android:id="@+id/size40" android:title="text size : 40"/>
+        </menu>
+    </item>
+    <item android:title="color">
+        <menu>
+            <item android:id="@+id/red" android:title="빨강"/>
+            <item android:id="@+id/green" android:title="초록"/>
+            <item android:id="@+id/blue" android:title="파랑"/>
+        </menu>
+    </item>
+
+
+</menu>

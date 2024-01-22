@@ -26,7 +26,8 @@ class AddActivity : AppCompatActivity() {
         when(item.itemId) {
             R.id.menu_save_add -> {
                 val intent = intent
-                intent.putExtra("result", binding.addEdit.text.toString())
+                intent.putExtra("title", binding.addEdit.text.toString())
+                intent.putExtra("content", binding.addEdit2.text.toString())
                 setResult(Activity.RESULT_OK, intent)
                 finish()
                 true

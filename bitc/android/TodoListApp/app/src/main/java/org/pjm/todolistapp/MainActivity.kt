@@ -12,7 +12,7 @@ import org.pjm.todolistapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    var datas: MutableList<DayJob>? = mutableListOf()
+    var datas: MutableList<DayJob> = mutableListOf()
     lateinit var adapter: MyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,11 +23,18 @@ class MainActivity : AppCompatActivity() {
         //add
         val requestLauncher: ActivityResultLauncher<Intent> =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-                it.data!!.getStringExtra("result")?.let {
-                    datas?.add(it)
-                    adapter.notifyDataSetChanged()
+                if (it.resultCode == Activity.RESULT_OK) {
+                    val title = it.data?.getStringExtra("title")
+                    val content = it.data?.getStringExtra("content")
+                    title?.let {
+                        datas.add(DayJob(it, content ?: ""))
+                        adapter.notifyDataSetChanged()
+                    }
                 }
             }
+
+        val detailLauncher: ActivityResultLauncher<Intent> =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { }
 
         binding.mainFab.setOnClickListener {
             val intent = Intent(this, AddActivity::class.java)
@@ -36,7 +43,12 @@ class MainActivity : AppCompatActivity() {
 
         var layoutManager = LinearLayoutManager(this)
         binding.recyclerView1.layoutManager = layoutManager
-        adapter = MyAdapter(datas)
+        adapter = MyAdapter(datas) { dayJob ->
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("title", dayJob.title)
+            intent.putExtra("content", dayJob.content)
+            detailLauncher.launch(intent)
+        }
         binding.recyclerView1.adapter = adapter
         binding.recyclerView1.addItemDecoration(
             DividerItemDecoration(

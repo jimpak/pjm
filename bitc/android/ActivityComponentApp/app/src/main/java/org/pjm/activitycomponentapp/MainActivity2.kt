@@ -9,30 +9,43 @@ import org.pjm.activitycomponentapp.databinding.ActivityMain2Binding
 import org.pjm.activitycomponentapp.databinding.ActivityMainBinding
 
 class MainActivity2 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val requestLauncher: ActivityResultLauncher<Intent> = registerForActivityResult (
-            ActivityResultContracts.StartActivityForResult()) {
-            val name = it.data?.getStringExtra("name")
-            val age = it.data?.getIntExtra("age",0)
-            val phone = it.data?.getStringExtra("phone")
+        var name = ""
+        var age = ""
+        var phone = ""
 
-            binding.tvResult.text = "name:$name, age:$age, phone:$phone"
+        val requestLauncher: ActivityResultLauncher<Intent> = registerForActivityResult (
+            ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+                val data = result.data
+                val nameResult = data?.getStringExtra("name")
+                val ageResult = data?.getIntExtra("age", 0)
+                val phoneResult = data?.getStringExtra("phone")
+
+                name = "이름 : $nameResult"
+                age = "나이 : $ageResult"
+                phone = "연락처 : $phoneResult"
+
+                binding.tvResult.text = "$name, $age, $phone"
+            }
         }
 
-
         binding.inbtn.setOnClickListener {
-            val intent2: Intent = Intent(applicationContext, DetailActivity2::class.java)
-            requestLauncher.launch(intent2)
+            val intent: Intent = Intent(applicationContext, DetailActivity2::class.java)
+            requestLauncher.launch(intent)
         }
 
         binding.outbtn.setOnClickListener {
-            val intent3: Intent = Intent(applicationContext, DetailActivity3::class.java)
-            requestLauncher.launch(intent3)
+            val intent: Intent = Intent(applicationContext, DetailActivity3::class.java)
+            intent.putExtra("name", name)
+            intent.putExtra("age", age.toString())
+            intent.putExtra("phone", phone)
+            requestLauncher.launch(intent)
         }
-
     }
 }

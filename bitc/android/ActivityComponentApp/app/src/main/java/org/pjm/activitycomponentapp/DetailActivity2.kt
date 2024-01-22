@@ -15,7 +15,6 @@ class DetailActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnBack.setOnClickListener {
-            val intent: Intent = Intent(this, DetailActivity::class.java)
             val name = binding.editname.text.toString()
             val age = binding.editage.text.toString().toInt()
             val phone = binding.editphone.text.toString()

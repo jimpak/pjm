@@ -1,6 +1,6 @@
 package org.pjm.db_todolistapp
 
 data class User (
-    var title: String,
-    var content: String
+    var name: String,
+    var phone: String
 )

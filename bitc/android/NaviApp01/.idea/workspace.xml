@@ -42,121 +42,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce9f6a25-2b93-42e6-9767-8d184f1ca3f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/androidTest/java/org/pjm/bottomnaviapp/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/dashboard/DashboardFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/dashboard/DashboardViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/home/HomeFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/home/HomeViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/notifications/NotificationsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/java/org/pjm/bottomnaviapp/ui/notifications/NotificationsViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/app/src/test/java/org/pjm/bottomnaviapp/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bottomNaviApp/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/org/pjm/naviapp01/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/dashboard/DashboardFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/dashboard/DashboardViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/home/HomeFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/home/HomeViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/notifications/NotificationsFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/pjm/naviapp01/ui/notifications/NotificationsViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/pjm/naviapp01/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/java/org/bitc/petpalserver/ropository/HospitalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/resources/response_1706514875543.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/androidTest/java/org/pjm/petpalapp/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/java/org/pjm/petpalapp/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/app/src/test/java/org/pjm/petpalapp/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/PetPalApp/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/PetPalApp/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/java/org/bitc/petpalserver/PetpalServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/java/org/bitc/petpalserver/PetpalServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PetPal/petpal-server/src/test/java/org/bitc/petpalserver/PetpalServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PetPal/petpal-server/src/test/java/org/bitc/petpalserver/PetpalServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBTodoListApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DBTodoListApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBTodoListApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DBTodoListApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirebaseApp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FirebaseApp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaverMapApp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NaverMapApp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../databaseApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../databaseApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../databaseApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../databaseApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../databaseApp/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../databaseApp/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,16 +99,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/pjm/bitc/android/NaverMapApp"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="android.template.-1552886673">
       <recent name="org.pjm.naviapp01.ui.mylogin" />
@@ -259,9 +179,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>게시물 수정</title>
+  <link rel="stylesheet" href="/css/sb-admin-2.css">
+  <script src="/js/sb-admin-2.js"></script>
+</head>
+
+<style>
+
+  .layout {
+    width: 500px;
+    margin: 40px auto 0px;
+  }
+
+  .layout input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  .layout textarea {
+    width : 100%;
+    margin-top: 10px;
+    min-height: 300px;
+  }
+
+</style>
+
+<body>
+<div class="layout">
+  <form th:action="@{/board/update/{id}(id = ${board.id})}" method="post" enctype="multipart/form-data">
+    <input class="form-control form-control-user" name="title" type="text" th:value="${board.title}" placeholder="제목을 입력하세요">
+    <textarea class="form-control form-control-user" name="content" th:text="${board.content}" placeholder="내용을 입력하세요"></textarea>
+    <input type="file" name="file">
+    <button type="submit">수정</button>
+  </form>
+</div>
+
+</body>
+</html>

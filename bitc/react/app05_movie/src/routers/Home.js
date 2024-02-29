@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import axios from 'axios';
 import './Home.css';
+import Movie from '../component/Movie';
 
 class Home extends Component {
     state = {
@@ -48,7 +49,16 @@ class Home extends Component {
                 ) : (
                     <div className="movies">
                         {movies.map((movie) => {
-                            return <h3 key={movie.id}>{movie.title}</h3>;
+                            return (
+                                <Movie
+                                    key={movie.id}
+                                    year={movie.year}
+                                    title={movie.title}
+                                    summary={movie.summary}
+                                    poster={movie.medium_cover_image}
+                                    genres={movie.genres}
+                                />
+                            );
                         })}
                     </div>
                 )}

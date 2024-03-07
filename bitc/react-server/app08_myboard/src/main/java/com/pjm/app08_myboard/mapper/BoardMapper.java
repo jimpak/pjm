@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface BoardMapper {
-    @Select("select * from board")
+    @Select("select * from board order by num desc")
     List<Board> getList();
     @Insert("insert into board(title, content) values (#{title},#{content})")
     @Options(useGeneratedKeys = true, keyProperty = "num")

@@ -29,49 +29,66 @@ import axios from 'axios';
 // ];
 
 function reducer(state, action) {
-    // switch (action.type) {
-    //     case 'INIT': {
-    //         return action.data;
-    //     }
-    //     case 'CREATE': {
-    //         return [action.data, ...state];
-    //     }
-    //     case 'UPDATE': {
-    //         return state.map((it) => (String(it.id) === String(action.data.id) ? { ...action.data } : it));
-    //     }
-    //     case 'DELETE': {
-    //         return state.filter((it) => String(it.id) !== String(action.targetId));
-    //     }
-    //     default: {
-    //         return state;
-    //     }
-    // }
+    switch (action.type) {
+        case 'INIT': {
+            return action.data;
+        }
+        case 'CREATE': {
+            return [action.data, ...state];
+        }
+        case 'UPDATE': {
+            return state.map((it) => (String(it.id) === String(action.data.id) ? { ...action.data } : it));
+        }
+        case 'DELETE': {
+            return state.filter((it) => String(it.id) !== String(action.targetId));
+        }
+        default: {
+            return state;
+        }
+    }
 }
 
 function App() {
-    const [isDataLoaded, setIsDataLoaded] = useState(true);
+    const [isDataLoaded, setIsDataLoaded] = useState(false);
     const [data, dispatch] = useReducer(reducer, []);
     // const idRef = useRef(0);
 
-    // useEffect(() => {
-    //     dispatch({
-    //         type: 'INIT',
-    //         data: mockData,
-    //     });
-    //     setIsDataLoaded(true);
-    // }, []);
+    useEffect(() => {
+        axios.get('/diary/list').then((resp) => {
+            console.log('axios list:', resp.data);
+            dispatch({
+                type: 'INIT',
+                data: resp.data,
+            });
+            setIsDataLoaded(true);
+        });
+
+        //     dispatch({
+        //         type: 'INIT',
+        //         data: mockData,
+        //     });
+        //     setIsDataLoaded(true);
+    }, []);
 
     const onCreate = (date, content, emotionId) => {
         axios
-            .post('diary/insert', {
+            .post('/diary/insert', {
                 date: date,
                 content: content,
                 emotionId: emotionId,
             })
             .then((resp) => {
                 console.log('insert');
+                dispatch({
+                    type: 'CREATE',
+                    data: {
+                        id: resp.data.id,
+                        date: resp.data.date,
+                        content: resp.data.content,
+                        emotionId: resp.data.emotionId,
+                    },
+                });
             });
-
         // dispatch({
         //     type: 'CREATE',
         //     data: {
@@ -83,24 +100,48 @@ function App() {
         // idRef.current += 1;
     };
 
-    // const onUpdate = (targetId, date, content, emotionId) => {
-    //     dispatch({
-    //         type: 'UPDATE',
-    //         data: {
-    //             id: targetId,
-    //             date: new Date(date).getTime(),
-    //             content,
-    //             emotionId,
-    //         },
-    //     });
-    // };
+    const onUpdate = (targetId, date, content, emotionId) => {
+        axios
+            .put(`/diary/update/${targetId}`, {
+                id: targetId,
+                date: date,
+                content: content,
+                emotionId: emotionId,
+            })
+            .then((resp) => {
+                dispatch({
+                    type: 'UPDATE',
+                    data: {
+                        id: targetId,
+                        date: resp.data.date,
+                        content: resp.data.content,
+                        emotionId: resp.data.emotionId,
+                    },
+                });
+            });
+        //     dispatch({
+        //         type: 'UPDATE',
+        //         data: {
+        //             id: targetId,
+        //             date: new Date(date).getTime(),
+        //             content,
+        //             emotionId,
+        //         },
+    };
 
-    // const onDelete = (targetId) => {
-    //     dispatch({
-    //         type: 'DELETE',
-    //         targetId,
-    //     });
-    // };
+    const onDelete = (targetId) => {
+        axios.delete(`/diary/delete/${targetId}`).then(() => {
+            dispatch({
+                type: 'DELETE',
+                targetId,
+            });
+        });
+
+        // dispatch({
+        //     type: 'DELETE',
+        //     targetId,
+        // });
+    };
 
     if (!isDataLoaded) {
         return <div>데이터를 불러오는 중입니다</div>;
@@ -110,8 +151,8 @@ function App() {
                 <DiaryDispatchContext.Provider
                     value={{
                         onCreate,
-                        // onUpdate,
-                        // onDelete,
+                        onUpdate,
+                        onDelete,
                     }}
                 >
                     <div className="App">

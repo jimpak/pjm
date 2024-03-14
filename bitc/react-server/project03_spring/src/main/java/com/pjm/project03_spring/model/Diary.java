@@ -1,5 +1,6 @@
 package com.pjm.project03_spring.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,6 +16,7 @@ public class Diary {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String content;
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date date;
     private int emotionId;
 }

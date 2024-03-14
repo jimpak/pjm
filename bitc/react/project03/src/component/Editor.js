@@ -12,11 +12,14 @@ const Editor = ({ initData, onSubmit }) => {
         navigate(-1);
     };
 
-    const [state, setState] = useState({
-        date: getFormattedDate(new Date()),
-        emotionId: 3,
-        content: '',
-    });
+    const [state, setState] = useState(
+        {
+            date: getFormattedDate(new Date()),
+            emotionId: 3,
+            content: '',
+        },
+        []
+    );
     const handleChangeDate = (e) => {
         setState({
             ...state,
@@ -44,7 +47,7 @@ const Editor = ({ initData, onSubmit }) => {
         if (initData) {
             setState({
                 ...initData,
-                date: getFormattedDate(new Date(parseInt(initData.date))),
+                date: initData.date,
             });
         }
     }, [initData]);

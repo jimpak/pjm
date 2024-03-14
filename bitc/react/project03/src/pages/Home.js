@@ -23,7 +23,11 @@ const Home = () => {
     useEffect(() => {
         if (data.length >= 1) {
             const { beginTimeStamp, endTimeStamp } = getMonthRangeByDate(pivotDate);
-            setFilteredData(data.filter((it) => beginTimeStamp <= it.date && it.date <= endTimeStamp));
+            setFilteredData(
+                // data
+                // data.filter((it) => beginTimeStamp <= it.date && it.date <= endTimeStamp)
+                data.filter((it) => `${pivotDate.getMonth()}` <= it.date && it.date <= `${pivotDate.getMonth() + 1}`)
+            );
         } else {
             setFilteredData([]);
         }

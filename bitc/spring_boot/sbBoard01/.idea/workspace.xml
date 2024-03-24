@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e2cc80-b939-45c5-b031-ec6eb64a9995" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sb02/repository/CommentRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sb02/repository/CommentRepositoryCustomImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sb02/service/BoareServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sb02/src/main/java/com/example/sb02/service/BoareServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springSecurity/src/main/java/com/example/springsecurity/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springSecurity/src/main/java/com/example/springsecurity/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_pro/boardSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ml/ml_2024/mnist_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ml/ml_2024/mnist_ann.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/controller/DiaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/controller/DiaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/model/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/model/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/service/DiaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../react-server/project03_spring/src/main/java/com/pjm/project03_spring/service/DiaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/project03/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../react/project03/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/project03/src/component/DiaryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../react/project03/src/component/DiaryItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/project03/src/pages/Diary.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../react/project03/src/pages/Diary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/project03/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../react/project03/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/pjm/bitc/spring_boot/sbBoard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/pjm/bitc/spring_boot/sbBoard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\pjm\bitc\spring_boot\sbBoard01\src\main\java\com\example\sbboard01" />
@@ -106,6 +109,7 @@
       <workItem from="1703722659301" duration="10000" />
       <workItem from="1703745905242" duration="14000" />
       <workItem from="1704263598636" duration="10000" />
+      <workItem from="1710380501113" duration="26000" />
     </task>
     <servers />
   </component>
